@@ -129,3 +129,52 @@ class datasetVal(data.Dataset):
 
         return nameIn_mask, nameIn, nameTar
     
+    
+class datasetTest(data.Dataset):
+    def __init__(self, args):
+        self.nTest = args.nTest
+        self.testDir = 'video0'
+        self.imgInMaskPrefix = 'mask'
+        self.imgInPrefix = 'composed'
+        self.imgTarPrefix = 'real'
+        self.pad_size = (512, 1024)
+        with open(f'{self.testDir}/random.txt', 'r') as f:
+            self.dataset_samples = [int(x) for x in f.readlines()]
+
+    def __getitem__(self, idx):
+        idx = self.dataset_samples[100+idx]
+
+        nameIn_mask, nameIn, nameTar = self.getFileName(idx)
+        img = imageio.imread(nameIn_mask)/255.0
+        img = np.expand_dims(img, 2)
+        img_size = img.shape
+        imgIn_mask = np.zeros((self.pad_size[0], self.pad_size[1], 1))
+        imgIn_mask[:img.shape[0], :img.shape[1], :] = img
+
+        img = imageio.imread(nameIn)/255.0
+        img_size = img.shape
+        imgIn = np.ones((self.pad_size[0], self.pad_size[1], 3))
+        imgIn[:img.shape[0], :img.shape[1], :] = img
+        imgIn = np.concatenate((imgIn, imgIn_mask), axis=2)
+        
+        imgTar = imageio.imread(nameTar)
+        
+        # imgIn, _ = np2PytorchTensor(imgIn, imgTar)
+        return np2PytorchTensor(imgIn, imgTar)
+
+    def __len__(self):
+        return self.nTest
+
+    def getFileName(self, idx):
+        fileName = '{:0>4}'.format(idx)
+        nameIn_mask = '{}/{}_{}.png'.format(self.imgInMaskPrefix, self.imgInMaskPrefix, fileName)
+        nameIn_mask = os.path.join(self.testDir, nameIn_mask)
+        
+        nameIn = '{}_image/{}_{}.png'.format(self.imgInPrefix, self.imgInPrefix, fileName)
+        nameIn = os.path.join(self.testDir, nameIn)
+        
+        nameTar = '{}_image/{}_{}.png'.format(self.imgTarPrefix, self.imgTarPrefix, fileName)
+        nameTar = os.path.join(self.testDir, nameTar)
+
+        return nameIn_mask, nameIn, nameTar
+    
