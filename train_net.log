@@ -1,0 +1,9 @@
+training log record, random seed=777
+dataset configuration: epoch size = 150, batch size = 16, patch size = 256
+===> Epoch[1](30/150): Avg. Loss: 0.2231
+===> Epoch[1](60/150): Avg. Loss: 0.1672
+===> Epoch[1](90/150): Avg. Loss: 0.1528
+===> Epoch[1](120/150): Avg. Loss: 0.1477
+===> Epoch[1](150/150): Avg. Loss: 0.1425
+===> Avg. PSNR: 11.8570 dB
+===> Epoch[2](30/150): Avg. Loss: 0.1328
