@@ -2,5 +2,6 @@ video0/composed_image
 video0/mask
 video0/real_image
 video0/transfer
-video0/test
-model_trained
+video0/test/real_image/*
+video0/test/result/*
+model_trained/*
