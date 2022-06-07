@@ -4,15 +4,14 @@ from torch.autograd import Variable
 import imageio
 import numpy as np
 import argparse
+from dataset import datasetTest
 from skimage.metrics import structural_similarity as ssim_metric
 from skimage.metrics import peak_signal_noise_ratio as psnr_metric 
 
 # ===== Testing settings =====#
-parser = argparse.ArgumentParser(description='NTHU EE - CP HW3 - ZebraSRNet')
-parser.add_argument('--input_image_path', type=str, required=True, help='input image path')
+parser = argparse.ArgumentParser(description='NTHU EE - CP Final Project - AnimeDIHNet')
 parser.add_argument('--model_path', type=str, required=True, help='model file path')
-parser.add_argument('--output_image_path', type=str, required=True, help='output image path')
-parser.add_argument('--compare_image_path', type=str, help='ground-truth image to compare with the output image')
+parser.add_argument('--nTest', type=int, default=20, help='number of testing images')
 parser.add_argument('--cuda', action='store_true', help='use cuda?')
 args = parser.parse_args()
 
@@ -21,33 +20,39 @@ print(args)
 if args.cuda and not torch.cuda.is_available():
     raise Exception("No GPU found, please run without --cuda")
 
-#===== load ZebraSRNet model =====#
+#===== AnimeDIHNet model =====#
 print('===> Loading model')
 net = torch.load(args.model_path)
 if args.cuda:
     net = net.cuda()
 
-#===== Load input image =====#
-imgIn = imageio.imread(args.input_image_path)/255.0
-imgIn = imgIn.transpose((2,0,1)).astype(float)
-imgIn = imgIn.reshape(1, *imgIn.shape)
-imgIn = torch.Tensor(imgIn)
+#===== Datasets =====#
+print('===> Loading datasets')
+test_set = datasetTest(args)
+test_data_loader = DataLoader(dataset=test_set)
 
-#===== Test procedures =====#
-varIn = Variable(imgIn)
-if args.cuda:
-    varIn = varIn.cuda()
+#===== Testing procedures =====#
+with open('test_result.log', 'w') as f:
+    f.write('testing log record:')
+    f.write('dataset size = {}\n'.format(args.nTest))
+    print('------------------------------')
+    for i, (imgIn, imgTar) in enumerate(test_data_loader):
+        print('Image{}:'.format(i))
+        varIn = Variable(imgIn)
+        img_real = imgTar.numpy().squeeze().transpose((1, 2, 0)).astype('uint8')
+        img_size = img_real.shape
+        if args.cuda:
+            varIn = varIn.cuda()
+ 
+        pred = net(varIn)
+        pred = pred.data.cpu().numpy().squeeze().transpose((1, 2, 0))
+        img_pred = np.round(255*np.clip(pred[:img_size[0], :img_size[1], :], 0, 1)).astype('uint8')
+        imageio.imwrite('video0/test/result/result_{:0>4}.png'.format(i), img_pred)
+        imageio.imwrite('video0/test/real_image/real_image_{:0>4}.png'.format(i), img_real)
 
-prediction = net(varIn)
-prediction = prediction.data.cpu().numpy().squeeze().transpose((1,2,0))
-img_out = np.round(255*np.clip(prediction, 0.0, 1.0)).astype('uint8')
-imageio.imwrite(args.output_image_path, img_out)
-
-#===== Ground-truth comparison =====#
-if args.compare_image_path is not None:
-    imgTar = imageio.imread(args.compare_image_path)
-    prediction = imageio.imread(args.output_image_path) 
-    psnr = psnr_metric(imgTar, prediction, data_range=255)
-    print('===> PSNR: {:.4f} dB'.format(psnr))
-    ssim = ssim_metric(imgTar, prediction, multichannel=True)
-    print('===> SSIM: {:.4f} dB'.format(ssim))
+        psnr = psnr_metric(img_real, img_pred, data_range=255)
+        print('===> PSNR: {:.4f} dB'.format(psnr))
+        ssim = ssim_metric(img_real, img_pred, multichannel=True)
+        print('===> SSIM: {:.4f} dB'.format(ssim))
+        print('------------------------------')
+        
