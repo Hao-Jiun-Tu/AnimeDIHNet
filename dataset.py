@@ -158,7 +158,7 @@ class datasetTest(data.Dataset):
         imgIn = np.concatenate((imgIn, imgIn_mask), axis=2)
         
         imgTar = imageio.imread(nameTar)
-        
+        #fjdkfdjkj
         # imgIn, _ = np2PytorchTensor(imgIn, imgTar)
         return np2PytorchTensor(imgIn, imgTar)
 
