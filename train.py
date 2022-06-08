@@ -23,7 +23,7 @@ parser.add_argument('--nEpochs', type=int, default=150, help='number of epochs f
 parser.add_argument('--nTrain', type=int, default=100, help='number of training images')
 parser.add_argument('--nVal', type=int, default=10, help='number of validation images')
 parser.add_argument('--cuda', action='store_true', help='use cuda?')
-parser.add_argument('--lr', type=float, default=1e-6, help='Learning Rate. Default=1e-4')
+parser.add_argument('--lr', type=float, default=1e-4, help='Learning Rate. Default=1e-4')
 parser.add_argument('--threads', type=int, default=4, help='number of threads for data loader to use, if Your OS is window, please set to 0')
 parser.add_argument('--seed', type=int, default=777, help='random seed to use. Default=777')
 parser.add_argument('--printEvery', type=int, default=30, help='number of batches to print average loss ')
@@ -111,8 +111,10 @@ def validate(f):
         prediction[prediction<  0] =   0
         prediction = prediction[:, :, :img_size[2], :img_size[3]]
         mse = mse_criterion(prediction, varTar)
+        print(mse.data)
         loss = criterion(prediction, varTar, varIn[:,3].unsqueeze(1))
         psnr = 10 * log10(1.0*1.0/mse.data)
+        print(psnr)
         avg_psnr += psnr
         avg_loss += loss.data
     avg_psnr /= len(val_data_loader)    
@@ -141,6 +143,6 @@ with open('train_net.log', 'w') as f:
     print('-------')
     for epoch in range(0, args.nEpochs+1):
     # for epoch in range(1, args.nEpochs+1):
-        train(f, epoch)
+        #train(f, epoch)
         validate(f)
         checkpoint(epoch)
