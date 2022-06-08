@@ -115,7 +115,7 @@ class datasetVal(data.Dataset):
         
         imgTar = imageio.imread(nameTar)/255.0
         
-        imgIn, imgTar = randomCrop(imgIn, imgTar, self.patchSize)
+        #imgIn, imgTar = randomCrop(imgIn, imgTar, self.patchSize)
         return np2PytorchTensor(imgIn, imgTar)
 
     def __len__(self):
