@@ -9,10 +9,11 @@ import os
 import numpy as np
 import random
 import matplotlib.pyplot as plt
+from modified_loss import MaskWeightedMSE
 
 #===== Training settings =====#
 parser = argparse.ArgumentParser(description='NTHU EE - CP Final Project - AnimeDIHNet')
-parser.add_argument('--patchSize', type=int, default=256, help='HR image cropping (patch) size for training')
+parser.add_argument('--patchSize', type=int, default=128, help='HR image cropping (patch) size for training')
 parser.add_argument('--batchSize', type=int, default=16, help='training batch size')
 parser.add_argument('--epochSize', type=int, default=150, help='number of batches as one epoch (for validating once)')
 parser.add_argument('--nEpochs', type=int, default=150, help='number of epochs for training')
@@ -22,7 +23,7 @@ parser.add_argument('--nEpochs', type=int, default=150, help='number of epochs f
 parser.add_argument('--nTrain', type=int, default=100, help='number of training images')
 parser.add_argument('--nVal', type=int, default=10, help='number of validation images')
 parser.add_argument('--cuda', action='store_true', help='use cuda?')
-parser.add_argument('--lr', type=float, default=1e-4, help='Learning Rate. Default=1e-4')
+parser.add_argument('--lr', type=float, default=1e-6, help='Learning Rate. Default=1e-4')
 parser.add_argument('--threads', type=int, default=4, help='number of threads for data loader to use, if Your OS is window, please set to 0')
 parser.add_argument('--seed', type=int, default=777, help='random seed to use. Default=777')
 parser.add_argument('--printEvery', type=int, default=30, help='number of batches to print average loss ')
@@ -65,7 +66,8 @@ if args.cuda:
     net = net.cuda()
 
 #===== Loss function and optimizer =====#
-criterion = torch.nn.L1Loss()
+#criterion = torch.nn.MSELoss()
+criterion = MaskWeightedMSE()
 
 if args.cuda:
     criterion = criterion.cuda()
@@ -83,7 +85,7 @@ def train(f, epoch):
             varTar = varTar.cuda()
 
         optimizer.zero_grad()
-        loss = criterion(net(varIn), varTar)
+        loss = criterion(net(varIn), varTar, varIn[:,3].unsqueeze(1))
         epoch_loss += loss.data
         loss.backward()
         optimizer.step()
@@ -99,6 +101,7 @@ def validate(f):
     mse_criterion = torch.nn.MSELoss()
     for batch in val_data_loader:
         varIn, varTar = Variable(batch[0]), Variable(batch[1])
+        img_size = batch[1].shape
         if args.cuda:
             varIn = varIn.cuda()
             varTar = varTar.cuda()
@@ -106,11 +109,12 @@ def validate(f):
         prediction = net(varIn)
         prediction[prediction>  1] =   1
         prediction[prediction<  0] =   0
+        prediction = prediction[:, :, :img_size[2], :img_size[3]]
         mse = mse_criterion(prediction, varTar)
-        loss = criterion(net(varIn), varTar)
+        loss = criterion(prediction, varTar, varIn[:,3].unsqueeze(1))
         psnr = 10 * log10(1.0*1.0/mse.data)
         avg_psnr += psnr
-        avg_loss += loss
+        avg_loss += loss.data
     avg_psnr /= len(val_data_loader)    
     avg_loss /= len(val_data_loader)
     print("===> Avg. PSNR: {:.4f} dB".format(avg_psnr))
@@ -135,7 +139,7 @@ with open('train_net.log', 'w') as f:
     f.write('training log record, random seed={}\n'.format(args.seed))
     f.write('dataset configuration: epoch size = {}, batch size = {}, patch size = {}\n'.format(args.epochSize, args.batchSize, args.patchSize))
     print('-------')
-    for epoch in range(82, args.nEpochs+1):
+    for epoch in range(0, args.nEpochs+1):
     # for epoch in range(1, args.nEpochs+1):
         train(f, epoch)
         validate(f)

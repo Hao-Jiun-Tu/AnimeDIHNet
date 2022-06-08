@@ -8,15 +8,12 @@ class AnimeDIHNet(nn.Module):
         self.encoder = UNetEncoder()
         self.decoder = UNetDecoder()
         self.conv1x1_32to3ch = ConvBlock(in_channels=32, out_channels=3, kernel_size=1, stride=1, padding=0, activation=nn.ReLU, bias=True)
-        self.conv1x1_32to1ch = ConvBlock(in_channels=32, out_channels=1, kernel_size=1, stride=1, padding=0, activation=nn.ReLU, bias=True)
+        self.conv1x1_32to1ch = ConvBlock(in_channels=32, out_channels=1, kernel_size=1, stride=1, padding=0, activation=nn.Sigmoid, bias=True)
 
     def forward(self, x):
         #===== Check Input Dimension =====#
-        # print('Input shape: {}'.format(x.shape))
         comp = x[:,:3]
         mask = x[:,3].unsqueeze(1)
-        # print('mask shape: {}'.format(mask.shape))
-        # print('comp shape: {}'.format(comp.shape))
         
         #===== AutoEncoder Structure =====#
         out = self.encoder(x) 
