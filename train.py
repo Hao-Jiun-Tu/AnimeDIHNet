@@ -55,11 +55,11 @@ val_set = datasetVal(args)
 val_data_loader = DataLoader(dataset=val_set, num_workers=args.threads, batch_size=1, shuffle=False, worker_init_fn=seed_worker)
 
 #===== AnimeDIHNet model =====#
-# print('===> Building model')
-# net = AnimeDIHNet()
+print('===> Building model')
+net = AnimeDIHNet()
 
-print('===> Loading model')
-net = torch.load('./model_trained/net_epoch_81.pth')
+# print('===> Loading model')
+# net = torch.load('./model_trained/net_epoch_81.pth')
 
 if args.cuda:
     net = net.cuda()
