@@ -7,8 +7,10 @@ class AnimeDIHNet(nn.Module):
         super(AnimeDIHNet, self).__init__()
         self.encoder = UNetEncoder()
         self.decoder = UNetDecoder()
-        self.conv1x1_32to3ch = ConvBlock(in_channels=32, out_channels=3, kernel_size=1, stride=1, padding=0, activation=nn.ReLU, bias=True)
-        self.conv1x1_32to1ch = ConvBlock(in_channels=32, out_channels=1, kernel_size=1, stride=1, padding=0, activation=nn.Sigmoid, bias=True)
+        self.conv1x1_32to3ch = ConvBlock(in_channels=32, out_channels=3, kernel_size=3, stride=1, padding=1, activation=nn.ReLU, bias=True)
+        self.conv1x1_32to1ch = ConvBlock(in_channels=32, out_channels=3, kernel_size=3, stride=1, padding=1, activation=nn.ReLU, bias=True)
+        #self.conv1x1_32to1ch = nn.Conv2d(32, 1, 1, stride=1, padding=0)
+
 
     def forward(self, x):
         #===== Check Input Dimension =====#
