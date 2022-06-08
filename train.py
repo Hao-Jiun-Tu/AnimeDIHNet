@@ -56,11 +56,11 @@ val_set = datasetVal(args)
 val_data_loader = DataLoader(dataset=val_set, num_workers=args.threads, batch_size=1, shuffle=False, worker_init_fn=seed_worker)
 
 #===== AnimeDIHNet model =====#
-print('===> Building model')
-net = AnimeDIHNet()
+# print('===> Building model')
+# net = AnimeDIHNet()
 
-# print('===> Loading model')
-# net = torch.load('./model_trained/net_epoch_81.pth')
+print('===> Loading model')
+net = torch.load('./model_trained/net_epoch_43.pth')
 
 if args.cuda:
     net = net.cuda()
@@ -143,7 +143,7 @@ with open('train_net.log', 'w') as f:
     f.write('training log record, random seed={}\n'.format(args.seed))
     f.write('dataset configuration: epoch size = {}, batch size = {}, patch size = {}\n'.format(args.epochSize, args.batchSize, args.patchSize))
     print('-------')
-    for epoch in range(1, args.nEpochs+1):
+    for epoch in range(44, args.nEpochs+1):
     # for epoch in range(1, args.nEpochs+1):
         train(f, epoch)
         validate(f)
