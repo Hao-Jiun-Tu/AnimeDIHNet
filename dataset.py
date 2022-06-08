@@ -94,6 +94,7 @@ class datasetVal(data.Dataset):
         self.imgInMaskPrefix = 'mask'
         self.imgInPrefix = 'composed'
         self.imgTarPrefix = 'real'
+        self.pad_size = (512, 1024)
         with open(f'{self.valDir}/random.txt', 'r') as f:
             self.dataset_samples = [int(x) for x in f.readlines()]
 
@@ -104,9 +105,13 @@ class datasetVal(data.Dataset):
         nameIn_mask, nameIn, nameTar = self.getFileName(idx)
         imgIn_mask = imageio.imread(nameIn_mask)/255.0
         imgIn_mask = np.expand_dims(imgIn_mask, 2)
+        imgIn_mask_padding = np.zeros((self.pad_size[0], self.pad_size[1], 1))
+        imgIn_mask_padding[:imgIn_mask.shape[0], :imgIn_mask.shape[1], :] = imgIn_mask
         
         imgIn = imageio.imread(nameIn)/255.0
-        imgIn = np.concatenate((imgIn, imgIn_mask), axis=2)
+        imgIn_padding = np.ones((self.pad_size[0], self.pad_size[1], 3))
+        imgIn_padding[:imgIn.shape[0], :imgIn.shape[1], :] = imgIn
+        imgIn = np.concatenate((imgIn_padding, imgIn_mask_padding), axis=2)
         
         imgTar = imageio.imread(nameTar)/255.0
         
