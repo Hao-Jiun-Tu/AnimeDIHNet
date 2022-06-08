@@ -56,6 +56,7 @@ val_data_loader = DataLoader(dataset=val_set, num_workers=args.threads, batch_si
 #===== AnimeDIHNet model =====#
 print('===> Building model')
 net = AnimeDIHNet()
+# net = torch.load('./model_trained/net_epoch_97.pth')
 
 if args.cuda:
     net = net.cuda()
@@ -113,20 +114,17 @@ if not os.path.isdir(save_dir):
     os.makedirs(save_dir)
 
 def checkpoint(epoch): 
-    # save_name = 'net_F{}B{}E{}_epoch_{}.pth'.format(args.nFeat, args.nResBlock, args.ExpandRatio, epoch)
     save_name = 'net_epoch_{}.pth'.format(epoch)
     save_path = os.path.join(save_dir, save_name)
     torch.save(net, save_path)
     print("Checkpoint saved to {}".format(save_path))
 
 #===== Main procedure =====#
-# with open('train_net_F{}B{}E{}.log'.format(args.nFeat, args.nResBlock, args.ExpandRatio),'w') as f:
-#     f.write('training log record of F={}, B={}, E={}, random seed={}\n'.format(args.nFeat, args.nResBlock, args.ExpandRatio, args.seed))
-#     f.write('dataset configuration: epoch size = {}, batch size = {}, patch size = {}\n'.format(args.epochSize, args.batchSize, args.patchSize))
 with open('train_net.log', 'w') as f:
     f.write('training log record, random seed={}\n'.format(args.seed))
     f.write('dataset configuration: epoch size = {}, batch size = {}, patch size = {}\n'.format(args.epochSize, args.batchSize, args.patchSize))
     print('-------')
+    # for epoch in range(98, args.nEpochs+1):
     for epoch in range(1, args.nEpochs+1):
         train(f, epoch)
         validate(f)
