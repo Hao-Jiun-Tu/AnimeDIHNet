@@ -6,8 +6,9 @@ from model import AnimeDIHNet
 from dataset import datasetTrain, datasetVal
 import argparse
 import os
-import numpy
+import numpy as np
 import random
+import matplotlib.pyplot as plt
 
 #===== Training settings =====#
 parser = argparse.ArgumentParser(description='NTHU EE - CP Final Project - AnimeDIHNet')
@@ -38,13 +39,13 @@ torch.manual_seed(args.seed)
 if args.cuda:
     torch.cuda.manual_seed(args.seed)
 random.seed(args.seed)
-numpy.random.seed(args.seed)
+np.random.seed(args.seed)
 torch.backends.cudnn.benchmark = False
 
 #===== Datasets =====#
 def seed_worker(worker_id):
     worker_seed = args.seed
-    numpy.random.seed(args.seed)
+    np.random.seed(args.seed)
     random.seed(args.seed)
     
 print('===> Loading datasets')
@@ -92,6 +93,7 @@ def train(f, epoch):
 def validate(f):
     net.eval()
     avg_psnr = 0
+    avg_loss = 0
     mse_criterion = torch.nn.MSELoss()
     for batch in val_data_loader:
         varIn, varTar = Variable(batch[0]), Variable(batch[1])
@@ -103,10 +105,17 @@ def validate(f):
         prediction[prediction>  1] =   1
         prediction[prediction<  0] =   0
         mse = mse_criterion(prediction, varTar)
+        loss = criterion(net(varIn), varTar)
         psnr = 10 * log10(1.0*1.0/mse.data)
         avg_psnr += psnr
-    print("===> Avg. PSNR: {:.4f} dB".format(avg_psnr / len(val_data_loader)))
-    f.write("===> Avg. PSNR: {:.4f} dB\n".format(avg_psnr / len(val_data_loader)))
+        avg_loss += loss
+    avg_psnr /= len(val_data_loader)    
+    avg_loss /= len(val_data_loader)
+    print("===> Avg. PSNR: {:.4f} dB".format(avg_psnr))
+    f.write("===> Avg. PSNR: {:.4f} dB\n".format(avg_psnr))
+    print("===> Avg. Loss: {:.4f}".format(avg_loss))
+    f.write("===> Avg. Loss: {:.4f}\n".format(avg_loss))
+    return avg_loss
 
 #===== Model saving =====#
 save_dir = './model_trained'
