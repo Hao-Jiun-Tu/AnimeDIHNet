@@ -13,8 +13,8 @@ class AnimeDIHNet(nn.Module):
     def forward(self, x):
         #===== Check Input Dimension =====#
         # print('Input shape: {}'.format(x.shape))
-        mask = x[:,0].unsqueeze(1)
-        comp = x[:,1:]
+        comp = x[:,:3]
+        mask = x[:,3].unsqueeze(1)
         # print('mask shape: {}'.format(mask.shape))
         # print('comp shape: {}'.format(comp.shape))
         
@@ -23,9 +23,10 @@ class AnimeDIHNet(nn.Module):
         out = self.decoder(out) 
         
         #===== Create Blending Layer =====#
-        out_mask = self.conv1x1_32to1ch(out)
         out_comp = self.conv1x1_32to3ch(out)
+        out_mask = self.conv1x1_32to1ch(out)
         output = (out_comp*out_mask) + (1-out_mask)*comp
+        
         return output
     
     
