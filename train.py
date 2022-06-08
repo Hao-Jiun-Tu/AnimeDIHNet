@@ -86,6 +86,7 @@ def train(f, epoch):
 
         optimizer.zero_grad()
         loss = criterion(net(varIn), varTar, varIn[:,3].unsqueeze(1))
+        #loss = criterion(net(varIn), varTar)
         epoch_loss += loss.data
         loss.backward()
         optimizer.step()
@@ -115,6 +116,7 @@ def validate(f):
             mse = mse_criterion(prediction, varTar)
             print(mse.data)
             loss = criterion(prediction, varTar, varIn[:,3].unsqueeze(1)).item()
+            #loss = criterion(prediction, varTar).item()
             psnr = 10 * log10(1.0*1.0/mse.item())
             print(psnr)
             avg_psnr += psnr
