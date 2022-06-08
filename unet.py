@@ -84,11 +84,18 @@ class UNetDownBlock(nn.Module):
 class UNetUpBlock(nn.Module):
     def __init__(self, in_channels, out_channels, activation, padding):
         super(UNetUpBlock, self).__init__()
+        # self.deconv = nn.Sequential(
+        #     nn.Upsample(scale_factor=2, mode='bicubic', align_corners=True),
+        #     ConvBlock(in_channels, out_channels, kernel_size=3, stride=1, padding=padding, activation=activation, bias=True),
+        #     ConvBlock(out_channels, out_channels, kernel_size=3, stride=1, padding=padding, activation=activation, bias=True),
+        # )      
+        
         self.deconv = nn.Sequential(
-            nn.Upsample(scale_factor=2, mode='bicubic', align_corners=True),
+            ConvBlock(in_channels, 4*in_channels, kernel_size=3, stride=1, padding=padding, activation=activation, bias=True),
+            nn.PixelShuffle(2),
             ConvBlock(in_channels, out_channels, kernel_size=3, stride=1, padding=padding, activation=activation, bias=True),
-            ConvBlock(out_channels, out_channels, kernel_size=3, stride=1, padding=padding, activation=activation, bias=True),
-        )        
+            ConvBlock(out_channels, out_channels, kernel_size=3, stride=1, padding=padding, activation=activation, bias=True)
+        )      
 
     def forward(self, x):
         output = self.deconv(x)
