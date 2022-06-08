@@ -52,8 +52,7 @@ class UNetDecoder(nn.Module):
         )
         
         self.conv_out = nn.Sequential(
-            ConvBlock(in_channels=64, out_channels=3, kernel_size=3, stride=1, padding=1, activation=nn.ReLU, bias=True),
-            ConvBlock(in_channels=3, out_channels=3, kernel_size=3, stride=1, padding=1, activation=nn.ReLU, bias=True)
+            ConvBlock(in_channels=64, out_channels=32, kernel_size=3, stride=1, padding=1, activation=nn.ReLU, bias=True)
         )
 
     def forward(self, encoder_outputs):

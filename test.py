@@ -35,9 +35,10 @@ test_data_loader = DataLoader(dataset=test_set)
 with open('test_result.log', 'w') as f:
     f.write('testing log record:')
     f.write('dataset size = {}\n'.format(args.nTest))
-    print('------------------------------')
+    f.write('------------------------------\n')
     for i, (imgIn, imgTar) in enumerate(test_data_loader):
         print('Image{}:'.format(i))
+        f.write('Image{}:\n'.format(i))
         varIn = Variable(imgIn)
         img_real = imgTar.numpy().squeeze().transpose((1, 2, 0)).astype('uint8')
         img_size = img_real.shape
@@ -52,7 +53,10 @@ with open('test_result.log', 'w') as f:
 
         psnr = psnr_metric(img_real, img_pred, data_range=255)
         print('===> PSNR: {:.4f} dB'.format(psnr))
+        f.write('===> PSNR: {:.4f} dB\n'.format(psnr))
         ssim = ssim_metric(img_real, img_pred, multichannel=True)
         print('===> SSIM: {:.4f} dB'.format(ssim))
+        f.write('===> SSIM: {:.4f} dB\n'.format(ssim))
         print('------------------------------')
+        f.write('------------------------------\n')
         
