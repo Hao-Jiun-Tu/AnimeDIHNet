@@ -95,28 +95,30 @@ def train(f, epoch):
             epoch_loss = 0
 
 def validate(f):
-    net.eval()
     avg_psnr = 0
     avg_loss = 0
     mse_criterion = torch.nn.MSELoss()
-    for batch in val_data_loader:
-        varIn, varTar = Variable(batch[0]), Variable(batch[1])
-        img_size = batch[1].shape
-        if args.cuda:
-            varIn = varIn.cuda()
-            varTar = varTar.cuda()
 
-        prediction = net(varIn)
-        prediction[prediction>  1] =   1
-        prediction[prediction<  0] =   0
-        prediction = prediction[:, :, :img_size[2], :img_size[3]]
-        mse = mse_criterion(prediction, varTar)
-        print(mse.data)
-        loss = criterion(prediction, varTar, varIn[:,3].unsqueeze(1))
-        psnr = 10 * log10(1.0*1.0/mse.data)
-        print(psnr)
-        avg_psnr += psnr
-        avg_loss += loss.data
+    net.eval()
+    with torch.no_grad():
+        for batch in val_data_loader:
+            varIn, varTar = Variable(batch[0]), Variable(batch[1])
+            img_size = batch[1].shape
+            if args.cuda:
+                varIn = varIn.cuda()
+                varTar = varTar.cuda()
+
+            prediction = net(varIn)
+            prediction[prediction>  1] =   1
+            prediction[prediction<  0] =   0
+            prediction = prediction[:, :, :img_size[2], :img_size[3]]
+            mse = mse_criterion(prediction, varTar)
+            print(mse.data)
+            loss = criterion(prediction, varTar, varIn[:,3].unsqueeze(1)).item()
+            psnr = 10 * log10(1.0*1.0/mse.item())
+            print(psnr)
+            avg_psnr += psnr
+            avg_loss += loss
     avg_psnr /= len(val_data_loader)    
     avg_loss /= len(val_data_loader)
     print("===> Avg. PSNR: {:.4f} dB".format(avg_psnr))
@@ -143,6 +145,6 @@ with open('train_net.log', 'w') as f:
     print('-------')
     for epoch in range(0, args.nEpochs+1):
     # for epoch in range(1, args.nEpochs+1):
-        #train(f, epoch)
+        train(f, epoch)
         validate(f)
         checkpoint(epoch)
