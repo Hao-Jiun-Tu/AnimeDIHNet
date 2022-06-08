@@ -152,12 +152,10 @@ class datasetTest(data.Dataset):
         nameIn_mask, nameIn, nameTar = self.getFileName(idx)
         img = imageio.imread(nameIn_mask)/255.0
         img = np.expand_dims(img, 2)
-        img_size = img.shape
         imgIn_mask = np.zeros((self.pad_size[0], self.pad_size[1], 1))
         imgIn_mask[:img.shape[0], :img.shape[1], :] = img
 
         img = imageio.imread(nameIn)/255.0
-        img_size = img.shape
         imgIn = np.ones((self.pad_size[0], self.pad_size[1], 3))
         imgIn[:img.shape[0], :img.shape[1], :] = img
         imgIn = np.concatenate((imgIn, imgIn_mask), axis=2)
