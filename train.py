@@ -145,7 +145,7 @@ with open('train_net.log', 'w') as f:
     f.write('training log record, random seed={}\n'.format(args.seed))
     f.write('dataset configuration: epoch size = {}, batch size = {}, patch size = {}\n'.format(args.epochSize, args.batchSize, args.patchSize))
     print('-------')
-    for epoch in range(0, args.nEpochs+1):
+    for epoch in range(1, args.nEpochs+1):
     # for epoch in range(1, args.nEpochs+1):
         train(f, epoch)
         validate(f)
