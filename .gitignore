@@ -4,4 +4,4 @@ video0/real_image
 video0/transfer
 video0/test/real_image/*
 video0/test/result/*
-model_trained/*
+save_model/*
