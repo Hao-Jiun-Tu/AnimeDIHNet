@@ -26,7 +26,8 @@ class AnimeDIHNet(nn.Module):
         #===== Create Blending Layer =====#
         out_comp = self.conv1x1_32to3ch(out)
         out_mask = self.conv1x1_32to1ch(out)
-        output = (out_comp*out_mask) + (1-out_mask)*comp
+        # output = (out_comp*out_mask) + (1-out_mask)*comp
+        output = out_comp*(1-out_mask) + out_mask*comp
         return output
     
     
