@@ -1,0 +1,102 @@
+training log record, random seed=777
+dataset configuration: epoch size = 150, batch size = 16, patch size = 128
+===> Epoch[0](30/150): Avg. Loss: 0.4881
+===> Epoch[0](60/150): Avg. Loss: 0.4249
+===> Epoch[0](90/150): Avg. Loss: 0.3411
+===> Epoch[0](120/150): Avg. Loss: 0.0821
+===> Epoch[0](150/150): Avg. Loss: 0.0173
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[1](30/150): Avg. Loss: 0.0178
+===> Epoch[1](60/150): Avg. Loss: 0.0153
+===> Epoch[1](90/150): Avg. Loss: 0.0181
+===> Epoch[1](120/150): Avg. Loss: 0.0175
+===> Epoch[1](150/150): Avg. Loss: 0.0158
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[2](30/150): Avg. Loss: 0.0180
+===> Epoch[2](60/150): Avg. Loss: 0.0162
+===> Epoch[2](90/150): Avg. Loss: 0.0174
+===> Epoch[2](120/150): Avg. Loss: 0.0179
+===> Epoch[2](150/150): Avg. Loss: 0.0159
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[3](30/150): Avg. Loss: 0.0186
+===> Epoch[3](60/150): Avg. Loss: 0.0127
+===> Epoch[3](90/150): Avg. Loss: 0.0165
+===> Epoch[3](120/150): Avg. Loss: 0.0157
+===> Epoch[3](150/150): Avg. Loss: 0.0172
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[4](30/150): Avg. Loss: 0.0146
+===> Epoch[4](60/150): Avg. Loss: 0.0173
+===> Epoch[4](90/150): Avg. Loss: 0.0174
+===> Epoch[4](120/150): Avg. Loss: 0.0135
+===> Epoch[4](150/150): Avg. Loss: 0.0157
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[5](30/150): Avg. Loss: 0.0159
+===> Epoch[5](60/150): Avg. Loss: 0.0149
+===> Epoch[5](90/150): Avg. Loss: 0.0172
+===> Epoch[5](120/150): Avg. Loss: 0.0181
+===> Epoch[5](150/150): Avg. Loss: 0.0165
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[6](30/150): Avg. Loss: 0.0181
+===> Epoch[6](60/150): Avg. Loss: 0.0147
+===> Epoch[6](90/150): Avg. Loss: 0.0145
+===> Epoch[6](120/150): Avg. Loss: 0.0166
+===> Epoch[6](150/150): Avg. Loss: 0.0177
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[7](30/150): Avg. Loss: 0.0152
+===> Epoch[7](60/150): Avg. Loss: 0.0138
+===> Epoch[7](90/150): Avg. Loss: 0.0157
+===> Epoch[7](120/150): Avg. Loss: 0.0192
+===> Epoch[7](150/150): Avg. Loss: 0.0182
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[8](30/150): Avg. Loss: 0.0155
+===> Epoch[8](60/150): Avg. Loss: 0.0180
+===> Epoch[8](90/150): Avg. Loss: 0.0169
+===> Epoch[8](120/150): Avg. Loss: 0.0136
+===> Epoch[8](150/150): Avg. Loss: 0.0161
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[9](30/150): Avg. Loss: 0.0177
+===> Epoch[9](60/150): Avg. Loss: 0.0147
+===> Epoch[9](90/150): Avg. Loss: 0.0160
+===> Epoch[9](120/150): Avg. Loss: 0.0166
+===> Epoch[9](150/150): Avg. Loss: 0.0175
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[10](30/150): Avg. Loss: 0.0159
+===> Epoch[10](60/150): Avg. Loss: 0.0172
+===> Epoch[10](90/150): Avg. Loss: 0.0153
+===> Epoch[10](120/150): Avg. Loss: 0.0173
+===> Epoch[10](150/150): Avg. Loss: 0.0162
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[11](30/150): Avg. Loss: 0.0150
+===> Epoch[11](60/150): Avg. Loss: 0.0155
+===> Epoch[11](90/150): Avg. Loss: 0.0162
+===> Epoch[11](120/150): Avg. Loss: 0.0177
+===> Epoch[11](150/150): Avg. Loss: 0.0158
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[12](30/150): Avg. Loss: 0.0176
+===> Epoch[12](60/150): Avg. Loss: 0.0161
+===> Epoch[12](90/150): Avg. Loss: 0.0158
+===> Epoch[12](120/150): Avg. Loss: 0.0159
+===> Epoch[12](150/150): Avg. Loss: 0.0204
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[13](30/150): Avg. Loss: 0.0139
+===> Epoch[13](60/150): Avg. Loss: 0.0182
+===> Epoch[13](90/150): Avg. Loss: 0.0187
+===> Epoch[13](120/150): Avg. Loss: 0.0160
+===> Epoch[13](150/150): Avg. Loss: 0.0181
+===> Avg. PSNR: 28.6035 dB
+===> Avg. Loss: 0.0432
+===> Epoch[14](30/150): Avg. Loss: 0.0167
+===> Epoch[14](60/150): Avg. Loss: 0.0167

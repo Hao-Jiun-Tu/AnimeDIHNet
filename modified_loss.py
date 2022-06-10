@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 class MaskWeightedMSE(nn.Module):
-    def __init__(self, min_area=100):
+    def __init__(self, min_area=1000):
         super(MaskWeightedMSE, self).__init__()
         self.min_area = min_area
 
