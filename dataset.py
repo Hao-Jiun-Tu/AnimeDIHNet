@@ -36,7 +36,6 @@ def augment(imgIn, imgTar, hflip=True, vflip=True, rotation=True):
     if random.random() < 0.5 and rotation:
         imgIn = imgIn.transpose(1, 0, 2)
         imgTar = imgTar.transpose(1, 0, 2)
-
     return imgIn, imgTar
 
 # ===== Dataset =====#
@@ -47,7 +46,8 @@ class datasetTrain(data.Dataset):
         self.batchSize = args.batchSize
         self.nTrain = args.nTrain
         self.trainDir = 'video0'
-        self.imgInMaskPrefix = 'mask'
+        self.imgInMaskPrefix = 'blurred_mask'
+        # self.imgInMaskPrefix = 'mask'
         self.imgInPrefix = 'composed'
         self.imgTarPrefix = 'real'
         with open(f'{self.trainDir}/random.txt', 'r') as f:
@@ -82,7 +82,6 @@ class datasetTrain(data.Dataset):
         
         nameTar = '{}_image/{}_{}.png'.format(self.imgTarPrefix, self.imgTarPrefix, fileName)
         nameTar = os.path.join(self.trainDir, nameTar)
-
         return nameIn_mask, nameIn, nameTar
 
     
@@ -91,7 +90,8 @@ class datasetVal(data.Dataset):
         self.patchSize = args.patchSize
         self.nVal = args.nVal
         self.valDir = 'video0'
-        self.imgInMaskPrefix = 'mask'
+        self.imgInMaskPrefix = 'blurred_mask'
+        # self.imgInMaskPrefix = 'mask'
         self.imgInPrefix = 'composed'
         self.imgTarPrefix = 'real'
         self.pad_size = (512, 1024)
@@ -114,7 +114,6 @@ class datasetVal(data.Dataset):
         imgIn = np.concatenate((imgIn_padding, imgIn_mask_padding), axis=2)
         
         imgTar = imageio.imread(nameTar)/255.0
-        
         #imgIn, imgTar = randomCrop(imgIn, imgTar, self.patchSize)
         return np2PytorchTensor(imgIn, imgTar)
 
@@ -131,24 +130,20 @@ class datasetVal(data.Dataset):
         
         nameTar = '{}_image/{}_{}.png'.format(self.imgTarPrefix, self.imgTarPrefix, fileName)
         nameTar = os.path.join(self.valDir, nameTar)
-
         return nameIn_mask, nameIn, nameTar
     
     
 class datasetTest(data.Dataset):
     def __init__(self, args):
         self.nTest = args.nTest
-        self.testDir = 'video0'
-        self.imgInMaskPrefix = 'mask'
+        self.testDir = 'video0/test'
+        self.imgInMaskPrefix = 'blurred_mask'
+        # self.imgInMaskPrefix = 'mask'
         self.imgInPrefix = 'composed'
         self.imgTarPrefix = 'real'
         self.pad_size = (512, 1024)
-        with open(f'{self.testDir}/random.txt', 'r') as f:
-            self.dataset_samples = [int(x) for x in f.readlines()]
 
     def __getitem__(self, idx):
-        idx = self.dataset_samples[100+idx]
-
         nameIn_mask, nameIn, nameTar = self.getFileName(idx)
         img = imageio.imread(nameIn_mask)/255.0
         img = np.expand_dims(img, 2)
@@ -176,6 +171,5 @@ class datasetTest(data.Dataset):
         
         nameTar = '{}_image/{}_{}.png'.format(self.imgTarPrefix, self.imgTarPrefix, fileName)
         nameTar = os.path.join(self.testDir, nameTar)
-
         return nameIn_mask, nameIn, nameTar
     

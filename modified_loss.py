@@ -12,5 +12,4 @@ class MaskWeightedMSE(nn.Module):
         delimeter = pred.size(1) * torch.clamp_min(torch.sum(mask, dim=reduce_dims), self.min_area)
         loss = torch.sum(loss, dim=reduce_dims) / delimeter 
         loss = torch.sum(loss) / pred.size(0)
-
         return loss

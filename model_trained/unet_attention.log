@@ -1,0 +1,441 @@
+training log record, random seed=777
+dataset configuration: epoch size = 150, batch size = 12, patch size = 256
+===> Epoch[186](30/150): Avg. Loss: 0.0005
+===> Epoch[186](60/150): Avg. Loss: 0.0005
+===> Epoch[186](90/150): Avg. Loss: 0.0004
+===> Epoch[186](120/150): Avg. Loss: 0.0005
+===> Epoch[186](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 34.8628 dB
+===> Avg. Loss: 0.0007
+Checkpoint saved to ./model_trained\net_epoch_186.pth
+===> Epoch[187](30/150): Avg. Loss: 0.0006
+===> Epoch[187](60/150): Avg. Loss: 0.0005
+===> Epoch[187](90/150): Avg. Loss: 0.0005
+===> Epoch[187](120/150): Avg. Loss: 0.0005
+===> Epoch[187](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.7732 dB
+===> Avg. Loss: 0.0007
+Checkpoint saved to ./model_trained\net_epoch_187.pth
+===> Epoch[188](30/150): Avg. Loss: 0.0005
+===> Epoch[188](60/150): Avg. Loss: 0.0005
+===> Epoch[188](90/150): Avg. Loss: 0.0005
+===> Epoch[188](120/150): Avg. Loss: 0.0005
+===> Epoch[188](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 34.7442 dB
+===> Avg. Loss: 0.0008
+Checkpoint saved to ./model_trained\net_epoch_188.pth
+===> Epoch[189](30/150): Avg. Loss: 0.0005
+===> Epoch[189](60/150): Avg. Loss: 0.0005
+===> Epoch[189](90/150): Avg. Loss: 0.0005
+===> Epoch[189](120/150): Avg. Loss: 0.0004
+===> Epoch[189](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.6543 dB
+===> Avg. Loss: 0.0008
+Checkpoint saved to ./model_trained\net_epoch_189.pth
+===> Epoch[190](30/150): Avg. Loss: 0.0004
+===> Epoch[190](60/150): Avg. Loss: 0.0005
+===> Epoch[190](90/150): Avg. Loss: 0.0005
+===> Epoch[190](120/150): Avg. Loss: 0.0005
+===> Epoch[190](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 35.1253 dB
+===> Avg. Loss: 0.0007
+Checkpoint saved to ./model_trained\net_epoch_190.pth
+===> Epoch[191](30/150): Avg. Loss: 0.0005
+===> Epoch[191](60/150): Avg. Loss: 0.0005
+===> Epoch[191](90/150): Avg. Loss: 0.0005
+===> Epoch[191](120/150): Avg. Loss: 0.0004
+===> Epoch[191](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.3811 dB
+===> Avg. Loss: 0.0009
+Checkpoint saved to ./model_trained\net_epoch_191.pth
+===> Epoch[192](30/150): Avg. Loss: 0.0004
+===> Epoch[192](60/150): Avg. Loss: 0.0004
+===> Epoch[192](90/150): Avg. Loss: 0.0005
+===> Epoch[192](120/150): Avg. Loss: 0.0006
+===> Epoch[192](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 35.1608 dB
+===> Avg. Loss: 0.0006
+Checkpoint saved to ./model_trained\net_epoch_192.pth
+===> Epoch[193](30/150): Avg. Loss: 0.0004
+===> Epoch[193](60/150): Avg. Loss: 0.0005
+===> Epoch[193](90/150): Avg. Loss: 0.0005
+===> Epoch[193](120/150): Avg. Loss: 0.0004
+===> Epoch[193](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.8422 dB
+===> Avg. Loss: 0.0007
+Checkpoint saved to ./model_trained\net_epoch_193.pth
+===> Epoch[194](30/150): Avg. Loss: 0.0005
+===> Epoch[194](60/150): Avg. Loss: 0.0005
+===> Epoch[194](90/150): Avg. Loss: 0.0005
+===> Epoch[194](120/150): Avg. Loss: 0.0004
+===> Epoch[194](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.7524 dB
+===> Avg. Loss: 0.0007
+Checkpoint saved to ./model_trained\net_epoch_194.pth
+===> Epoch[195](30/150): Avg. Loss: 0.0004
+===> Epoch[195](60/150): Avg. Loss: 0.0005
+===> Epoch[195](90/150): Avg. Loss: 0.0005
+===> Epoch[195](120/150): Avg. Loss: 0.0005
+===> Epoch[195](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.5553 dB
+===> Avg. Loss: 0.0007
+Checkpoint saved to ./model_trained\net_epoch_195.pth
+===> Epoch[196](30/150): Avg. Loss: 0.0005
+===> Epoch[196](60/150): Avg. Loss: 0.0005
+===> Epoch[196](90/150): Avg. Loss: 0.0004
+===> Epoch[196](120/150): Avg. Loss: 0.0004
+===> Epoch[196](150/150): Avg. Loss: 0.0005       
+===> Avg. PSNR: 34.9037 dB
+===> Avg. Loss: 0.0007
+Checkpoint saved to ./model_trained\net_epoch_196.pth
+===> Epoch[197](30/150): Avg. Loss: 0.0004
+===> Epoch[197](60/150): Avg. Loss: 0.0005
+===> Epoch[197](90/150): Avg. Loss: 0.0005
+===> Epoch[197](120/150): Avg. Loss: 0.0004
+===> Epoch[197](150/150): Avg. Loss: 0.0005
+tensor(0.0002, device='cuda:0')
+37.37827943558878
+tensor(0.0001, device='cuda:0')
+39.37075926346909
+tensor(0.0002, device='cuda:0')
+37.97333091349627
+tensor(1.6530e-05, device='cuda:0')
+47.81736303356542
+tensor(4.7713e-05, device='cuda:0')
+43.213636591650854
+tensor(0.0012, device='cuda:0')
+29.367019645429316
+tensor(0.0009, device='cuda:0')
+30.454114223489125
+tensor(0.0004, device='cuda:0')
+33.86742776758476
+tensor(4.0670e-05, device='cuda:0')
+43.90724214445146
+tensor(6.2263e-05, device='cuda:0')
+42.057701383396974
+tensor(0.0014, device='cuda:0')
+28.48689750714619
+tensor(0.0014, device='cuda:0')
+28.54044563146641
+tensor(0.0002, device='cuda:0')
+36.8844073209923
+tensor(0.0002, device='cuda:0')
+37.411995990948554
+tensor(0.0025, device='cuda:0')
+26.077761482398948
+tensor(6.8820e-05, device='cuda:0')
+41.62286285746846
+tensor(0.0009, device='cuda:0')
+30.516170354661046
+tensor(0.0020, device='cuda:0')
+27.067795849330825
+tensor(0.0004, device='cuda:0')
+33.68404316812103
+tensor(0.0004, device='cuda:0')
+33.70816179231732
+===> Avg. PSNR: 35.4704 dB
+===> Avg. Loss: 0.0006
+Checkpoint saved to ./model_trained\net_epoch_197.pth
+===> Epoch[198](30/150): Avg. Loss: 0.0004
+===> Epoch[198](60/150): Avg. Loss: 0.0005
+===> Epoch[198](90/150): Avg. Loss: 0.0005
+===> Epoch[198](120/150): Avg. Loss: 0.0004
+===> Epoch[198](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.7302 dB
+===> Avg. Loss: 0.0008
+Checkpoint saved to ./model_trained\net_epoch_198.pth
+===> Epoch[199](30/150): Avg. Loss: 0.0004
+===> Epoch[199](60/150): Avg. Loss: 0.0005
+===> Epoch[199](90/150): Avg. Loss: 0.0004
+===> Epoch[199](120/150): Avg. Loss: 0.0005
+===> Epoch[199](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.0518 dB
+===> Avg. Loss: 0.0009
+Checkpoint saved to ./model_trained\net_epoch_199.pth
+===> Epoch[200](30/150): Avg. Loss: 0.0004
+===> Epoch[200](60/150): Avg. Loss: 0.0004
+===> Epoch[200](90/150): Avg. Loss: 0.0005
+===> Epoch[200](120/150): Avg. Loss: 0.0005
+===> Epoch[200](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.5548 dB
+===> Avg. Loss: 0.0008
+===> Epoch[201](30/150): Avg. Loss: 0.0005
+===> Epoch[201](60/150): Avg. Loss: 0.0005
+===> Epoch[201](90/150): Avg. Loss: 0.0005
+===> Epoch[201](120/150): Avg. Loss: 0.0004
+===> Epoch[201](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.0260 dB
+===> Avg. Loss: 0.0007
+===> Epoch[202](30/150): Avg. Loss: 0.0004
+===> Epoch[202](60/150): Avg. Loss: 0.0005
+===> Epoch[202](90/150): Avg. Loss: 0.0006
+===> Epoch[202](120/150): Avg. Loss: 0.0005
+===> Epoch[202](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.3304 dB
+===> Avg. Loss: 0.0008
+===> Epoch[203](30/150): Avg. Loss: 0.0005
+===> Epoch[203](60/150): Avg. Loss: 0.0005
+===> Epoch[203](90/150): Avg. Loss: 0.0005
+===> Epoch[203](120/150): Avg. Loss: 0.0005
+===> Epoch[203](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.6551 dB
+===> Avg. Loss: 0.0008
+===> Epoch[204](30/150): Avg. Loss: 0.0005
+===> Epoch[204](60/150): Avg. Loss: 0.0006
+===> Epoch[204](90/150): Avg. Loss: 0.0005
+===> Epoch[204](120/150): Avg. Loss: 0.0005
+===> Epoch[204](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.1722 dB
+===> Avg. Loss: 0.0007
+===> Epoch[205](30/150): Avg. Loss: 0.0005
+===> Epoch[205](60/150): Avg. Loss: 0.0005
+===> Epoch[205](90/150): Avg. Loss: 0.0004
+===> Epoch[205](120/150): Avg. Loss: 0.0004
+===> Epoch[205](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.7952 dB
+===> Avg. Loss: 0.0008
+===> Epoch[206](30/150): Avg. Loss: 0.0005
+===> Epoch[206](60/150): Avg. Loss: 0.0005
+===> Epoch[206](90/150): Avg. Loss: 0.0005
+===> Epoch[206](120/150): Avg. Loss: 0.0004
+===> Epoch[206](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.4838 dB
+===> Avg. Loss: 0.0008
+===> Epoch[207](30/150): Avg. Loss: 0.0005
+===> Epoch[207](60/150): Avg. Loss: 0.0005
+===> Epoch[207](90/150): Avg. Loss: 0.0005
+===> Epoch[207](120/150): Avg. Loss: 0.0005
+===> Epoch[207](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 35.2304 dB
+===> Avg. Loss: 0.0006
+===> Epoch[208](30/150): Avg. Loss: 0.0005
+===> Epoch[208](60/150): Avg. Loss: 0.0005
+===> Epoch[208](90/150): Avg. Loss: 0.0004
+===> Epoch[208](120/150): Avg. Loss: 0.0004
+===> Epoch[208](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.7336 dB
+===> Avg. Loss: 0.0007
+===> Epoch[209](30/150): Avg. Loss: 0.0005
+===> Epoch[209](60/150): Avg. Loss: 0.0004
+===> Epoch[209](90/150): Avg. Loss: 0.0004
+===> Epoch[209](120/150): Avg. Loss: 0.0004
+===> Epoch[209](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.4390 dB
+===> Avg. Loss: 0.0008
+===> Epoch[210](30/150): Avg. Loss: 0.0006
+===> Epoch[210](60/150): Avg. Loss: 0.0004
+===> Epoch[210](90/150): Avg. Loss: 0.0004
+===> Epoch[210](120/150): Avg. Loss: 0.0005
+===> Epoch[210](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.5159 dB
+===> Avg. Loss: 0.0007
+===> Epoch[211](30/150): Avg. Loss: 0.0005
+===> Epoch[211](60/150): Avg. Loss: 0.0004
+===> Epoch[211](90/150): Avg. Loss: 0.0004
+===> Epoch[211](120/150): Avg. Loss: 0.0005
+===> Epoch[211](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.2821 dB
+===> Avg. Loss: 0.0006
+===> Epoch[212](30/150): Avg. Loss: 0.0004
+===> Epoch[212](60/150): Avg. Loss: 0.0004
+===> Epoch[212](90/150): Avg. Loss: 0.0004
+===> Epoch[212](120/150): Avg. Loss: 0.0005
+===> Epoch[212](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 35.3161 dB
+===> Avg. Loss: 0.0006
+===> Epoch[213](30/150): Avg. Loss: 0.0005
+===> Epoch[213](60/150): Avg. Loss: 0.0005
+===> Epoch[213](90/150): Avg. Loss: 0.0004
+===> Epoch[213](120/150): Avg. Loss: 0.0005
+===> Epoch[213](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 35.2621 dB
+===> Avg. Loss: 0.0006
+===> Epoch[214](30/150): Avg. Loss: 0.0005
+===> Epoch[214](60/150): Avg. Loss: 0.0004
+===> Epoch[214](90/150): Avg. Loss: 0.0004
+===> Epoch[214](120/150): Avg. Loss: 0.0004
+===> Epoch[214](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.3255 dB
+===> Avg. Loss: 0.0006
+===> Epoch[215](30/150): Avg. Loss: 0.0004
+===> Epoch[215](60/150): Avg. Loss: 0.0005
+===> Epoch[215](90/150): Avg. Loss: 0.0005
+===> Epoch[215](120/150): Avg. Loss: 0.0004
+===> Epoch[215](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.8055 dB
+===> Avg. Loss: 0.0008
+===> Epoch[216](30/150): Avg. Loss: 0.0005
+===> Epoch[216](60/150): Avg. Loss: 0.0005
+===> Epoch[216](90/150): Avg. Loss: 0.0005
+===> Epoch[216](120/150): Avg. Loss: 0.0004
+===> Epoch[216](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.7669 dB
+===> Avg. Loss: 0.0007
+===> Epoch[217](30/150): Avg. Loss: 0.0005
+===> Epoch[217](60/150): Avg. Loss: 0.0005
+===> Epoch[217](90/150): Avg. Loss: 0.0004
+===> Epoch[217](120/150): Avg. Loss: 0.0004
+===> Epoch[217](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.7873 dB
+===> Avg. Loss: 0.0008
+===> Epoch[218](30/150): Avg. Loss: 0.0004
+===> Epoch[218](60/150): Avg. Loss: 0.0005
+===> Epoch[218](90/150): Avg. Loss: 0.0004
+===> Epoch[218](120/150): Avg. Loss: 0.0004
+===> Epoch[218](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.9444 dB
+===> Avg. Loss: 0.0007
+===> Epoch[219](30/150): Avg. Loss: 0.0004
+===> Epoch[219](60/150): Avg. Loss: 0.0004
+===> Epoch[219](90/150): Avg. Loss: 0.0004
+===> Epoch[219](120/150): Avg. Loss: 0.0004
+===> Epoch[219](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.6509 dB
+===> Avg. Loss: 0.0007
+===> Epoch[220](30/150): Avg. Loss: 0.0004
+===> Epoch[220](60/150): Avg. Loss: 0.0004
+===> Epoch[220](90/150): Avg. Loss: 0.0004
+===> Epoch[220](120/150): Avg. Loss: 0.0004
+===> Epoch[220](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.2767 dB
+===> Avg. Loss: 0.0006
+===> Epoch[221](30/150): Avg. Loss: 0.0004
+===> Epoch[221](60/150): Avg. Loss: 0.0004
+===> Epoch[221](90/150): Avg. Loss: 0.0004
+===> Epoch[221](120/150): Avg. Loss: 0.0004
+===> Epoch[221](150/150): Avg. Loss: 0.0003
+===> Avg. PSNR: 34.9867 dB
+===> Avg. Loss: 0.0007
+===> Epoch[222](30/150): Avg. Loss: 0.0004
+===> Epoch[222](60/150): Avg. Loss: 0.0004
+===> Epoch[222](90/150): Avg. Loss: 0.0004
+===> Epoch[222](120/150): Avg. Loss: 0.0004
+===> Epoch[222](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.8388 dB
+===> Avg. Loss: 0.0007
+===> Epoch[223](30/150): Avg. Loss: 0.0005
+===> Epoch[223](60/150): Avg. Loss: 0.0004
+===> Epoch[223](90/150): Avg. Loss: 0.0004
+===> Epoch[223](120/150): Avg. Loss: 0.0004
+===> Epoch[223](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.2183 dB
+===> Avg. Loss: 0.0006
+===> Epoch[224](30/150): Avg. Loss: 0.0004
+===> Epoch[224](60/150): Avg. Loss: 0.0004
+===> Epoch[224](90/150): Avg. Loss: 0.0004
+===> Epoch[224](120/150): Avg. Loss: 0.0004
+===> Epoch[224](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.3490 dB
+===> Avg. Loss: 0.0006
+===> Epoch[225](30/150): Avg. Loss: 0.0004
+===> Epoch[225](60/150): Avg. Loss: 0.0004
+===> Epoch[225](90/150): Avg. Loss: 0.0004
+===> Epoch[225](120/150): Avg. Loss: 0.0004
+===> Epoch[225](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.1684 dB
+===> Avg. Loss: 0.0007
+===> Epoch[226](30/150): Avg. Loss: 0.0004
+===> Epoch[226](60/150): Avg. Loss: 0.0004
+===> Epoch[226](90/150): Avg. Loss: 0.0004
+===> Epoch[226](120/150): Avg. Loss: 0.0004
+===> Epoch[226](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.0807 dB
+===> Avg. Loss: 0.0007
+===> Epoch[227](30/150): Avg. Loss: 0.0004
+===> Epoch[227](60/150): Avg. Loss: 0.0005
+===> Epoch[227](90/150): Avg. Loss: 0.0005
+===> Epoch[227](120/150): Avg. Loss: 0.0004
+===> Epoch[227](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.9996 dB
+===> Avg. Loss: 0.0007
+===> Epoch[228](30/150): Avg. Loss: 0.0005
+===> Epoch[228](60/150): Avg. Loss: 0.0005
+===> Epoch[228](90/150): Avg. Loss: 0.0004
+===> Epoch[228](120/150): Avg. Loss: 0.0005
+===> Epoch[228](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.9987 dB
+===> Avg. Loss: 0.0008
+===> Epoch[229](30/150): Avg. Loss: 0.0005
+===> Epoch[229](60/150): Avg. Loss: 0.0004
+===> Epoch[229](90/150): Avg. Loss: 0.0005
+===> Epoch[229](120/150): Avg. Loss: 0.0004
+===> Epoch[229](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.2675 dB
+===> Avg. Loss: 0.0007
+===> Epoch[230](30/150): Avg. Loss: 0.0004
+===> Epoch[230](60/150): Avg. Loss: 0.0004
+===> Epoch[230](90/150): Avg. Loss: 0.0004
+===> Epoch[230](120/150): Avg. Loss: 0.0004
+===> Epoch[230](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.7498 dB
+===> Avg. Loss: 0.0007
+===> Epoch[231](30/150): Avg. Loss: 0.0004
+===> Epoch[231](60/150): Avg. Loss: 0.0004
+===> Epoch[231](90/150): Avg. Loss: 0.0004
+===> Epoch[231](120/150): Avg. Loss: 0.0005
+===> Epoch[231](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.9887 dB
+===> Avg. Loss: 0.0007
+===> Epoch[232](30/150): Avg. Loss: 0.0004
+===> Epoch[232](60/150): Avg. Loss: 0.0004
+===> Epoch[232](90/150): Avg. Loss: 0.0004
+===> Epoch[232](120/150): Avg. Loss: 0.0004
+===> Epoch[232](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.5401 dB
+===> Avg. Loss: 0.0007
+===> Epoch[233](30/150): Avg. Loss: 0.0004
+===> Epoch[233](60/150): Avg. Loss: 0.0004
+===> Epoch[233](90/150): Avg. Loss: 0.0004
+===> Epoch[233](120/150): Avg. Loss: 0.0004
+===> Epoch[233](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.5947 dB
+===> Avg. Loss: 0.0007
+===> Epoch[234](30/150): Avg. Loss: 0.0004
+===> Epoch[234](60/150): Avg. Loss: 0.0004
+===> Epoch[234](90/150): Avg. Loss: 0.0005
+===> Epoch[234](120/150): Avg. Loss: 0.0004
+===> Epoch[234](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.0176 dB
+===> Avg. Loss: 0.0007
+===> Epoch[235](30/150): Avg. Loss: 0.0004
+===> Epoch[235](60/150): Avg. Loss: 0.0004
+===> Epoch[235](90/150): Avg. Loss: 0.0004
+===> Epoch[235](120/150): Avg. Loss: 0.0004
+===> Epoch[235](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.9549 dB
+===> Avg. Loss: 0.0007
+===> Epoch[236](30/150): Avg. Loss: 0.0004
+===> Epoch[236](60/150): Avg. Loss: 0.0004
+===> Epoch[236](90/150): Avg. Loss: 0.0004
+===> Epoch[236](120/150): Avg. Loss: 0.0004
+===> Epoch[236](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 35.3708 dB
+===> Avg. Loss: 0.0007
+===> Epoch[237](30/150): Avg. Loss: 0.0004
+===> Epoch[237](60/150): Avg. Loss: 0.0004
+===> Epoch[237](90/150): Avg. Loss: 0.0004
+===> Epoch[237](120/150): Avg. Loss: 0.0004
+===> Epoch[237](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.7925 dB
+===> Avg. Loss: 0.0007
+===> Epoch[238](30/150): Avg. Loss: 0.0005
+===> Epoch[238](60/150): Avg. Loss: 0.0005
+===> Epoch[238](90/150): Avg. Loss: 0.0004
+===> Epoch[238](120/150): Avg. Loss: 0.0004
+===> Epoch[238](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.8434 dB
+===> Avg. Loss: 0.0008
+===> Epoch[239](30/150): Avg. Loss: 0.0004
+===> Epoch[239](60/150): Avg. Loss: 0.0004
+===> Epoch[239](90/150): Avg. Loss: 0.0005
+===> Epoch[239](120/150): Avg. Loss: 0.0004
+===> Epoch[239](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 35.0771 dB
+===> Avg. Loss: 0.0007
+===> Epoch[240](30/150): Avg. Loss: 0.0004
+===> Epoch[240](60/150): Avg. Loss: 0.0004
+===> Epoch[240](90/150): Avg. Loss: 0.0005
+===> Epoch[240](120/150): Avg. Loss: 0.0004
+===> Epoch[240](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.8073 dB
+===> Avg. Loss: 0.0008

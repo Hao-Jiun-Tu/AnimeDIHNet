@@ -7,10 +7,10 @@ class AnimeDIHNet(nn.Module):
         super(AnimeDIHNet, self).__init__()
         self.encoder = UNetEncoder()
         self.decoder = UNetDecoder()
-        self.conv1x1_32to3ch = ConvBlock(in_channels=32, out_channels=3, kernel_size=3, stride=1, padding=1, activation=nn.ReLU, bias=True)
-        self.conv1x1_32to1ch = ConvBlock(in_channels=32, out_channels=3, kernel_size=3, stride=1, padding=1, activation=nn.ReLU, bias=True)
-        #self.conv1x1_32to1ch = nn.Conv2d(32, 1, 1, stride=1, padding=0)
-
+        self.conv1x1_32to3ch = ConvBlock(in_channels=32, out_channels=3, kernel_size=1, stride=1, padding=0, activation=nn.ReLU, bias=True)
+        self.conv1x1_32to1ch = ConvBlock(in_channels=32, out_channels=3, kernel_size=1, stride=1, padding=0, activation=nn.ReLU, bias=True)
+        self.conv3x3_32to3ch = ConvBlock(in_channels=32, out_channels=3, kernel_size=3, stride=1, padding=1, activation=nn.ReLU, bias=True)
+        self.conv3x3_32to1ch = ConvBlock(in_channels=32, out_channels=3, kernel_size=3, stride=1, padding=1, activation=nn.ReLU, bias=True)
 
     def forward(self, x):
         #===== Check Input Dimension =====#
@@ -21,14 +21,15 @@ class AnimeDIHNet(nn.Module):
         out = self.encoder(x) 
         out = self.decoder(out) 
         
-        # return self.conv1x1_32to3ch(out)
-        
+        img = self.conv3x3_32to3ch(out)  
+        out = comp*(1.0-mask) + img*mask
+              
         #===== Create Blending Layer =====#
-        out_comp = self.conv1x1_32to3ch(out)
-        out_mask = self.conv1x1_32to1ch(out)
+        # out = self.conv1x1_32to3ch(out)        
+        # out_comp = self.conv1x1_32to3ch(out)
+        # out_mask = self.conv1x1_32to1ch(out)
         # output = (out_comp*out_mask) + (1-out_mask)*comp
-        output = out_comp*(1-out_mask) + out_mask*comp
-        return output
+        return out
     
     
 class ConvBlock(nn.Module):

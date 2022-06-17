@@ -2,7 +2,8 @@ import torch
 from torch.utils.data import DataLoader
 from torch.autograd import Variable
 from math import log10
-from model import AnimeDIHNet
+# from model import AnimeDIHNet
+# from model_att import AnimeDIHNet
 from dataset import datasetTrain, datasetVal
 import argparse
 import os
@@ -13,25 +14,29 @@ from modified_loss import MaskWeightedMSE
 
 #===== Training settings =====#
 parser = argparse.ArgumentParser(description='NTHU EE - CP Final Project - AnimeDIHNet')
-parser.add_argument('--patchSize', type=int, default=128, help='HR image cropping (patch) size for training')
+parser.add_argument('--patchSize', type=int, default=256, help='animation image cropping (patch) size for training')
 parser.add_argument('--batchSize', type=int, default=16, help='training batch size')
 parser.add_argument('--epochSize', type=int, default=150, help='number of batches as one epoch (for validating once)')
 parser.add_argument('--nEpochs', type=int, default=150, help='number of epochs for training')
-# parser.add_argument('--nFeat', type=int, default=16, help='channel number of feature maps')
-# parser.add_argument('--ExpandRatio', type=int, default=3, help='expansion ratio of residual block')
-# parser.add_argument('--nResBlock', type=int, default=2, help='number of residual blocks')
-parser.add_argument('--nTrain', type=int, default=100, help='number of training images')
-parser.add_argument('--nVal', type=int, default=10, help='number of validation images')
+parser.add_argument('--nTrain', type=int, default=400, help='number of training images')
+parser.add_argument('--nVal', type=int, default=20, help='number of validation images')
+parser.add_argument('--Loss', type=str, default='MSE', help='loss function: MSE or FN-MSE')
+parser.add_argument('--attention', type=int, default=False, help='with/without attention layers: 1/0')
 parser.add_argument('--cuda', action='store_true', help='use cuda?')
 parser.add_argument('--lr', type=float, default=1e-4, help='Learning Rate. Default=1e-4')
 parser.add_argument('--threads', type=int, default=4, help='number of threads for data loader to use, if Your OS is window, please set to 0')
 parser.add_argument('--seed', type=int, default=777, help='random seed to use. Default=777')
 parser.add_argument('--printEvery', type=int, default=30, help='number of batches to print average loss ')
-args = parser.parse_args()
 
+args = parser.parse_args()
 print(args)
 
 print(torch.__version__)
+
+if args.attention:
+    from model_att import AnimeDIHNet
+else:
+    from model import AnimeDIHNet
 
 if args.cuda and not torch.cuda.is_available():
     raise Exception("No GPU found, please run without --cuda")
@@ -42,7 +47,7 @@ if args.cuda:
 random.seed(args.seed)
 np.random.seed(args.seed)
 torch.backends.cudnn.benchmark = False
-
+    
 #===== Datasets =====#
 def seed_worker(worker_id):
     worker_seed = args.seed
@@ -59,13 +64,15 @@ val_data_loader = DataLoader(dataset=val_set, num_workers=args.threads, batch_si
 print('===> Building model')
 net = AnimeDIHNet()
 # print('===> Loading model')
-# net = torch.load('./model_trained/net_epoch_81.pth')
+# net = torch.load('./model_trained/net_epoch_213.pth')
 if args.cuda:
     net = net.cuda()
 
 #===== Loss function and optimizer =====#
-#criterion = torch.nn.MSELoss()
-criterion = MaskWeightedMSE()
+if args.Loss == 'MSE':
+    criterion = torch.nn.MSELoss()
+if args.Loss == 'FN-MSE':
+    criterion = MaskWeightedMSE()
 
 if args.cuda:
     criterion = criterion.cuda()
@@ -83,8 +90,10 @@ def train(f, epoch):
             varTar = varTar.cuda()
 
         optimizer.zero_grad()
-        loss = criterion(net(varIn), varTar, varIn[:,3].unsqueeze(1))
-        #loss = criterion(net(varIn), varTar)
+        if args.Loss == 'MSE':
+            loss = criterion(net(varIn), varTar)
+        if args.Loss == 'FN-MSE':
+            loss = criterion(net(varIn), varTar, varIn[:,3].unsqueeze(1))
         epoch_loss += loss.data
         loss.backward()
         optimizer.step()
@@ -108,13 +117,15 @@ def validate(f):
                 varTar = varTar.cuda()
 
             prediction = net(varIn)
-            prediction[prediction>  1] =   1
-            prediction[prediction<  0] =   0
+            prediction[prediction > 1] = 1
+            prediction[prediction < 0] = 0
             prediction = prediction[:, :, :img_size[2], :img_size[3]]
             mse = mse_criterion(prediction, varTar)
             print(mse.data)
-            loss = criterion(prediction, varTar, varIn[:,3].unsqueeze(1)).item()
-            #loss = criterion(prediction, varTar).item()
+            if args.Loss == 'MSE':
+                loss = criterion(prediction, varTar).item()
+            if args.Loss == 'FN-MSE':
+                loss = criterion(prediction, varTar, varIn[:,3].unsqueeze(1)).item()
             psnr = 10 * log10(1.0*1.0/mse.item())
             print(psnr)
             avg_psnr += psnr
@@ -144,7 +155,6 @@ with open('train_net.log', 'w') as f:
     f.write('dataset configuration: epoch size = {}, batch size = {}, patch size = {}\n'.format(args.epochSize, args.batchSize, args.patchSize))
     print('-------')
 
-    # for epoch in range(82, args.nEpochs+1):
     for epoch in range(1, args.nEpochs+1):
         train(f, epoch)
         validate(f)

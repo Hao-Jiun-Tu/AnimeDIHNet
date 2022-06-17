@@ -1,0 +1,1406 @@
+training log record, random seed=777
+dataset configuration: epoch size = 150, batch size = 16, patch size = 256
+===> Epoch[1](30/150): Avg. Loss: 0.0211
+===> Epoch[1](60/150): Avg. Loss: 0.0128
+===> Epoch[1](90/150): Avg. Loss: 0.0096
+===> Epoch[1](120/150): Avg. Loss: 0.0089
+===> Epoch[1](150/150): Avg. Loss: 0.0089
+===> Avg. PSNR: 25.1990 dB
+===> Avg. Loss: 0.0069
+===> Epoch[2](30/150): Avg. Loss: 0.0087
+===> Epoch[2](60/150): Avg. Loss: 0.0083
+===> Epoch[2](90/150): Avg. Loss: 0.0076
+===> Epoch[2](120/150): Avg. Loss: 0.0083
+===> Epoch[2](150/150): Avg. Loss: 0.0077
+===> Avg. PSNR: 24.6709 dB
+===> Avg. Loss: 0.0067
+===> Epoch[3](30/150): Avg. Loss: 0.0082
+===> Epoch[3](60/150): Avg. Loss: 0.0080
+===> Epoch[3](90/150): Avg. Loss: 0.0077
+===> Epoch[3](120/150): Avg. Loss: 0.0085
+===> Epoch[3](150/150): Avg. Loss: 0.0079
+===> Avg. PSNR: 25.1121 dB
+===> Avg. Loss: 0.0082
+===> Epoch[4](30/150): Avg. Loss: 0.0075
+===> Epoch[4](60/150): Avg. Loss: 0.0073
+===> Epoch[4](90/150): Avg. Loss: 0.0085
+===> Epoch[4](120/150): Avg. Loss: 0.0082
+===> Epoch[4](150/150): Avg. Loss: 0.0076
+===> Avg. PSNR: 25.0362 dB
+===> Avg. Loss: 0.0072
+===> Epoch[5](30/150): Avg. Loss: 0.0073
+===> Epoch[5](60/150): Avg. Loss: 0.0080
+===> Epoch[5](90/150): Avg. Loss: 0.0082
+===> Epoch[5](120/150): Avg. Loss: 0.0071
+===> Epoch[5](150/150): Avg. Loss: 0.0069
+===> Avg. PSNR: 25.2052 dB
+===> Avg. Loss: 0.0080
+===> Epoch[6](30/150): Avg. Loss: 0.0071
+===> Epoch[6](60/150): Avg. Loss: 0.0072
+===> Epoch[6](90/150): Avg. Loss: 0.0074
+===> Epoch[6](120/150): Avg. Loss: 0.0079
+===> Epoch[6](150/150): Avg. Loss: 0.0074
+===> Avg. PSNR: 25.3234 dB
+===> Avg. Loss: 0.0065
+===> Epoch[7](30/150): Avg. Loss: 0.0077
+===> Epoch[7](60/150): Avg. Loss: 0.0081
+===> Epoch[7](90/150): Avg. Loss: 0.0084
+===> Epoch[7](120/150): Avg. Loss: 0.0068
+===> Epoch[7](150/150): Avg. Loss: 0.0071
+===> Avg. PSNR: 25.6020 dB
+===> Avg. Loss: 0.0073
+===> Epoch[8](30/150): Avg. Loss: 0.0081
+===> Epoch[8](60/150): Avg. Loss: 0.0072
+===> Epoch[8](90/150): Avg. Loss: 0.0067
+===> Epoch[8](120/150): Avg. Loss: 0.0064
+===> Epoch[8](150/150): Avg. Loss: 0.0058
+===> Avg. PSNR: 26.2448 dB
+===> Avg. Loss: 0.0061
+===> Epoch[9](30/150): Avg. Loss: 0.0064
+===> Epoch[9](60/150): Avg. Loss: 0.0060
+===> Epoch[9](90/150): Avg. Loss: 0.0054
+===> Epoch[9](120/150): Avg. Loss: 0.0058
+===> Epoch[9](150/150): Avg. Loss: 0.0058
+===> Avg. PSNR: 26.7216 dB
+===> Avg. Loss: 0.0052
+===> Epoch[10](30/150): Avg. Loss: 0.0060
+===> Epoch[10](60/150): Avg. Loss: 0.0051
+===> Epoch[10](90/150): Avg. Loss: 0.0048
+===> Epoch[10](120/150): Avg. Loss: 0.0047
+===> Epoch[10](150/150): Avg. Loss: 0.0038
+===> Avg. PSNR: 26.0637 dB
+===> Avg. Loss: 0.0071
+===> Epoch[11](30/150): Avg. Loss: 0.0042
+===> Epoch[11](60/150): Avg. Loss: 0.0039
+===> Epoch[11](90/150): Avg. Loss: 0.0042
+===> Epoch[11](120/150): Avg. Loss: 0.0043
+===> Epoch[11](150/150): Avg. Loss: 0.0034
+===> Avg. PSNR: 27.2312 dB
+===> Avg. Loss: 0.0050
+===> Epoch[12](30/150): Avg. Loss: 0.0048
+===> Epoch[12](60/150): Avg. Loss: 0.0042
+===> Epoch[12](90/150): Avg. Loss: 0.0038
+===> Epoch[12](120/150): Avg. Loss: 0.0038
+===> Epoch[12](150/150): Avg. Loss: 0.0040
+===> Avg. PSNR: 26.2944 dB
+===> Avg. Loss: 0.0066
+===> Epoch[13](30/150): Avg. Loss: 0.0038
+===> Epoch[13](60/150): Avg. Loss: 0.0038
+===> Epoch[13](90/150): Avg. Loss: 0.0036
+===> Epoch[13](120/150): Avg. Loss: 0.0038
+===> Epoch[13](150/150): Avg. Loss: 0.0032
+===> Avg. PSNR: 27.9415 dB
+===> Avg. Loss: 0.0045
+===> Epoch[14](30/150): Avg. Loss: 0.0036
+===> Epoch[14](60/150): Avg. Loss: 0.0041
+===> Epoch[14](90/150): Avg. Loss: 0.0033
+===> Epoch[14](120/150): Avg. Loss: 0.0032
+===> Epoch[14](150/150): Avg. Loss: 0.0035
+===> Avg. PSNR: 28.4020 dB
+===> Avg. Loss: 0.0037
+===> Epoch[15](30/150): Avg. Loss: 0.0033
+===> Epoch[15](60/150): Avg. Loss: 0.0032
+===> Epoch[15](90/150): Avg. Loss: 0.0035
+===> Epoch[15](120/150): Avg. Loss: 0.0029
+===> Epoch[15](150/150): Avg. Loss: 0.0035
+===> Avg. PSNR: 26.8960 dB
+===> Avg. Loss: 0.0060
+===> Epoch[16](30/150): Avg. Loss: 0.0031
+===> Epoch[16](60/150): Avg. Loss: 0.0031
+===> Epoch[16](90/150): Avg. Loss: 0.0032
+===> Epoch[16](120/150): Avg. Loss: 0.0032
+===> Epoch[16](150/150): Avg. Loss: 0.0035
+===> Avg. PSNR: 27.8477 dB
+===> Avg. Loss: 0.0041
+===> Epoch[17](30/150): Avg. Loss: 0.0031
+===> Epoch[17](60/150): Avg. Loss: 0.0028
+===> Epoch[17](90/150): Avg. Loss: 0.0033
+===> Epoch[17](120/150): Avg. Loss: 0.0028
+===> Epoch[17](150/150): Avg. Loss: 0.0028
+===> Avg. PSNR: 29.3507 dB
+===> Avg. Loss: 0.0027
+===> Epoch[18](30/150): Avg. Loss: 0.0032
+===> Epoch[18](60/150): Avg. Loss: 0.0032
+===> Epoch[18](90/150): Avg. Loss: 0.0031
+===> Epoch[18](120/150): Avg. Loss: 0.0028
+===> Epoch[18](150/150): Avg. Loss: 0.0029
+===> Avg. PSNR: 27.8145 dB
+===> Avg. Loss: 0.0050
+===> Epoch[19](30/150): Avg. Loss: 0.0028
+===> Epoch[19](60/150): Avg. Loss: 0.0025
+===> Epoch[19](90/150): Avg. Loss: 0.0029
+===> Epoch[19](120/150): Avg. Loss: 0.0032
+===> Epoch[19](150/150): Avg. Loss: 0.0025
+===> Avg. PSNR: 29.3227 dB
+===> Avg. Loss: 0.0026
+===> Epoch[20](30/150): Avg. Loss: 0.0026
+===> Epoch[20](60/150): Avg. Loss: 0.0027
+===> Epoch[20](90/150): Avg. Loss: 0.0028
+===> Epoch[20](120/150): Avg. Loss: 0.0030
+===> Epoch[20](150/150): Avg. Loss: 0.0028
+===> Avg. PSNR: 29.4679 dB
+===> Avg. Loss: 0.0022
+===> Epoch[21](30/150): Avg. Loss: 0.0024
+===> Epoch[21](60/150): Avg. Loss: 0.0028
+===> Epoch[21](90/150): Avg. Loss: 0.0032
+===> Epoch[21](120/150): Avg. Loss: 0.0028
+===> Epoch[21](150/150): Avg. Loss: 0.0026
+===> Avg. PSNR: 29.4806 dB
+===> Avg. Loss: 0.0026
+===> Epoch[22](30/150): Avg. Loss: 0.0027
+===> Epoch[22](60/150): Avg. Loss: 0.0029
+===> Epoch[22](90/150): Avg. Loss: 0.0029
+===> Epoch[22](120/150): Avg. Loss: 0.0023
+===> Epoch[22](150/150): Avg. Loss: 0.0029
+===> Avg. PSNR: 28.7579 dB
+===> Avg. Loss: 0.0034
+===> Epoch[23](30/150): Avg. Loss: 0.0026
+===> Epoch[23](60/150): Avg. Loss: 0.0027
+===> Epoch[23](90/150): Avg. Loss: 0.0029
+===> Epoch[23](120/150): Avg. Loss: 0.0027
+===> Epoch[23](150/150): Avg. Loss: 0.0025
+===> Avg. PSNR: 29.7320 dB
+===> Avg. Loss: 0.0026
+===> Epoch[24](30/150): Avg. Loss: 0.0026
+===> Epoch[24](60/150): Avg. Loss: 0.0026
+===> Epoch[24](90/150): Avg. Loss: 0.0025
+===> Epoch[24](120/150): Avg. Loss: 0.0027
+===> Epoch[24](150/150): Avg. Loss: 0.0027
+===> Avg. PSNR: 29.9456 dB
+===> Avg. Loss: 0.0021
+===> Epoch[25](30/150): Avg. Loss: 0.0028
+===> Epoch[25](60/150): Avg. Loss: 0.0027
+===> Epoch[25](90/150): Avg. Loss: 0.0023
+===> Epoch[25](120/150): Avg. Loss: 0.0021
+===> Epoch[25](150/150): Avg. Loss: 0.0026
+===> Avg. PSNR: 30.1184 dB
+===> Avg. Loss: 0.0022
+===> Epoch[26](30/150): Avg. Loss: 0.0024
+===> Epoch[26](60/150): Avg. Loss: 0.0025
+===> Epoch[26](90/150): Avg. Loss: 0.0030
+===> Epoch[26](120/150): Avg. Loss: 0.0025
+===> Epoch[26](150/150): Avg. Loss: 0.0024
+===> Avg. PSNR: 28.9807 dB
+===> Avg. Loss: 0.0028
+===> Epoch[27](30/150): Avg. Loss: 0.0022
+===> Epoch[27](60/150): Avg. Loss: 0.0024
+===> Epoch[27](90/150): Avg. Loss: 0.0027
+===> Epoch[27](120/150): Avg. Loss: 0.0022
+===> Epoch[27](150/150): Avg. Loss: 0.0025
+===> Avg. PSNR: 30.5587 dB
+===> Avg. Loss: 0.0017
+===> Epoch[28](30/150): Avg. Loss: 0.0026
+===> Epoch[28](60/150): Avg. Loss: 0.0023
+===> Epoch[28](90/150): Avg. Loss: 0.0024
+===> Epoch[28](120/150): Avg. Loss: 0.0023
+===> Epoch[28](150/150): Avg. Loss: 0.0024
+===> Avg. PSNR: 30.0768 dB
+===> Avg. Loss: 0.0019
+===> Epoch[29](30/150): Avg. Loss: 0.0021
+===> Epoch[29](60/150): Avg. Loss: 0.0025
+===> Epoch[29](90/150): Avg. Loss: 0.0027
+===> Epoch[29](120/150): Avg. Loss: 0.0023
+===> Epoch[29](150/150): Avg. Loss: 0.0023
+===> Avg. PSNR: 29.6285 dB
+===> Avg. Loss: 0.0021
+===> Epoch[30](30/150): Avg. Loss: 0.0023
+===> Epoch[30](60/150): Avg. Loss: 0.0024
+===> Epoch[30](90/150): Avg. Loss: 0.0021
+===> Epoch[30](120/150): Avg. Loss: 0.0021
+===> Epoch[30](150/150): Avg. Loss: 0.0023
+===> Avg. PSNR: 30.5770 dB
+===> Avg. Loss: 0.0017
+===> Epoch[31](30/150): Avg. Loss: 0.0024
+===> Epoch[31](60/150): Avg. Loss: 0.0027
+===> Epoch[31](90/150): Avg. Loss: 0.0020
+===> Epoch[31](120/150): Avg. Loss: 0.0022
+===> Epoch[31](150/150): Avg. Loss: 0.0022
+===> Avg. PSNR: 30.3201 dB
+===> Avg. Loss: 0.0018
+===> Epoch[32](30/150): Avg. Loss: 0.0021
+===> Epoch[32](60/150): Avg. Loss: 0.0020
+===> Epoch[32](90/150): Avg. Loss: 0.0023
+===> Epoch[32](120/150): Avg. Loss: 0.0024
+===> Epoch[32](150/150): Avg. Loss: 0.0024
+===> Avg. PSNR: 30.3547 dB
+===> Avg. Loss: 0.0019
+===> Epoch[33](30/150): Avg. Loss: 0.0024
+===> Epoch[33](60/150): Avg. Loss: 0.0026
+===> Epoch[33](90/150): Avg. Loss: 0.0022
+===> Epoch[33](120/150): Avg. Loss: 0.0021
+===> Epoch[33](150/150): Avg. Loss: 0.0023
+===> Avg. PSNR: 30.5874 dB
+===> Avg. Loss: 0.0017
+===> Epoch[34](30/150): Avg. Loss: 0.0020
+===> Epoch[34](60/150): Avg. Loss: 0.0019
+===> Epoch[34](90/150): Avg. Loss: 0.0024
+===> Epoch[34](120/150): Avg. Loss: 0.0023
+===> Epoch[34](150/150): Avg. Loss: 0.0022
+===> Avg. PSNR: 30.3875 dB
+===> Avg. Loss: 0.0020
+===> Epoch[35](30/150): Avg. Loss: 0.0027
+===> Epoch[35](60/150): Avg. Loss: 0.0022
+===> Epoch[35](90/150): Avg. Loss: 0.0017
+===> Epoch[35](120/150): Avg. Loss: 0.0019
+===> Epoch[35](150/150): Avg. Loss: 0.0018
+===> Avg. PSNR: 30.8042 dB
+===> Avg. Loss: 0.0017
+===> Epoch[36](30/150): Avg. Loss: 0.0021
+===> Epoch[36](60/150): Avg. Loss: 0.0023
+===> Epoch[36](90/150): Avg. Loss: 0.0024
+===> Epoch[36](120/150): Avg. Loss: 0.0023
+===> Epoch[36](150/150): Avg. Loss: 0.0021
+===> Avg. PSNR: 30.7929 dB
+===> Avg. Loss: 0.0017
+===> Epoch[37](30/150): Avg. Loss: 0.0021
+===> Epoch[37](60/150): Avg. Loss: 0.0019
+===> Epoch[37](90/150): Avg. Loss: 0.0022
+===> Epoch[37](120/150): Avg. Loss: 0.0022
+===> Epoch[37](150/150): Avg. Loss: 0.0020
+===> Avg. PSNR: 30.8268 dB
+===> Avg. Loss: 0.0016
+===> Epoch[38](30/150): Avg. Loss: 0.0029
+===> Epoch[38](60/150): Avg. Loss: 0.0023
+===> Epoch[38](90/150): Avg. Loss: 0.0016
+===> Epoch[38](120/150): Avg. Loss: 0.0017
+===> Epoch[38](150/150): Avg. Loss: 0.0021
+===> Avg. PSNR: 30.9264 dB
+===> Avg. Loss: 0.0016
+===> Epoch[39](30/150): Avg. Loss: 0.0018
+===> Epoch[39](60/150): Avg. Loss: 0.0021
+===> Epoch[39](90/150): Avg. Loss: 0.0021
+===> Epoch[39](120/150): Avg. Loss: 0.0016
+===> Epoch[39](150/150): Avg. Loss: 0.0020
+===> Avg. PSNR: 30.7145 dB
+===> Avg. Loss: 0.0017
+===> Epoch[40](30/150): Avg. Loss: 0.0020
+===> Epoch[40](60/150): Avg. Loss: 0.0020
+===> Epoch[40](90/150): Avg. Loss: 0.0021
+===> Epoch[40](120/150): Avg. Loss: 0.0021
+===> Epoch[40](150/150): Avg. Loss: 0.0020
+===> Avg. PSNR: 31.1096 dB
+===> Avg. Loss: 0.0014
+===> Epoch[41](30/150): Avg. Loss: 0.0025
+===> Epoch[41](60/150): Avg. Loss: 0.0019
+===> Epoch[41](90/150): Avg. Loss: 0.0023
+===> Epoch[41](120/150): Avg. Loss: 0.0020
+===> Epoch[41](150/150): Avg. Loss: 0.0022
+===> Avg. PSNR: 30.3829 dB
+===> Avg. Loss: 0.0017
+===> Epoch[42](30/150): Avg. Loss: 0.0022
+===> Epoch[42](60/150): Avg. Loss: 0.0018
+===> Epoch[42](90/150): Avg. Loss: 0.0022
+===> Epoch[42](120/150): Avg. Loss: 0.0017
+===> Epoch[42](150/150): Avg. Loss: 0.0021
+===> Avg. PSNR: 29.9373 dB
+===> Avg. Loss: 0.0022
+===> Epoch[43](30/150): Avg. Loss: 0.0021
+===> Epoch[43](60/150): Avg. Loss: 0.0017
+===> Epoch[43](90/150): Avg. Loss: 0.0018
+===> Epoch[43](120/150): Avg. Loss: 0.0022
+===> Epoch[43](150/150): Avg. Loss: 0.0018
+===> Avg. PSNR: 31.2689 dB
+===> Avg. Loss: 0.0014
+===> Epoch[44](30/150): Avg. Loss: 0.0020
+===> Epoch[44](60/150): Avg. Loss: 0.0018
+===> Epoch[44](90/150): Avg. Loss: 0.0019
+===> Epoch[44](120/150): Avg. Loss: 0.0018
+===> Epoch[44](150/150): Avg. Loss: 0.0019
+===> Avg. PSNR: 31.0578 dB
+===> Avg. Loss: 0.0016
+===> Epoch[45](30/150): Avg. Loss: 0.0019
+===> Epoch[45](60/150): Avg. Loss: 0.0020
+===> Epoch[45](90/150): Avg. Loss: 0.0020
+===> Epoch[45](120/150): Avg. Loss: 0.0021
+===> Epoch[45](150/150): Avg. Loss: 0.0024
+===> Avg. PSNR: 28.3282 dB
+===> Avg. Loss: 0.0032
+===> Epoch[46](30/150): Avg. Loss: 0.0022
+===> Epoch[46](60/150): Avg. Loss: 0.0021
+===> Epoch[46](90/150): Avg. Loss: 0.0021
+===> Epoch[46](120/150): Avg. Loss: 0.0018
+===> Epoch[46](150/150): Avg. Loss: 0.0017
+===> Avg. PSNR: 31.1703 dB
+===> Avg. Loss: 0.0016
+===> Epoch[47](30/150): Avg. Loss: 0.0020
+===> Epoch[47](60/150): Avg. Loss: 0.0017
+===> Epoch[47](90/150): Avg. Loss: 0.0021
+===> Epoch[47](120/150): Avg. Loss: 0.0018
+===> Epoch[47](150/150): Avg. Loss: 0.0016
+===> Avg. PSNR: 31.3767 dB
+===> Avg. Loss: 0.0015
+===> Epoch[48](30/150): Avg. Loss: 0.0021
+===> Epoch[48](60/150): Avg. Loss: 0.0019
+===> Epoch[48](90/150): Avg. Loss: 0.0018
+===> Epoch[48](120/150): Avg. Loss: 0.0019
+===> Epoch[48](150/150): Avg. Loss: 0.0016
+===> Avg. PSNR: 31.7334 dB
+===> Avg. Loss: 0.0014
+===> Epoch[49](30/150): Avg. Loss: 0.0019
+===> Epoch[49](60/150): Avg. Loss: 0.0019
+===> Epoch[49](90/150): Avg. Loss: 0.0014
+===> Epoch[49](120/150): Avg. Loss: 0.0018
+===> Epoch[49](150/150): Avg. Loss: 0.0018
+===> Avg. PSNR: 31.5289 dB
+===> Avg. Loss: 0.0014
+===> Epoch[50](30/150): Avg. Loss: 0.0018
+===> Epoch[50](60/150): Avg. Loss: 0.0019
+===> Epoch[50](90/150): Avg. Loss: 0.0017
+===> Epoch[50](120/150): Avg. Loss: 0.0017
+===> Epoch[50](150/150): Avg. Loss: 0.0018
+===> Avg. PSNR: 31.3305 dB
+===> Avg. Loss: 0.0015
+===> Epoch[51](30/150): Avg. Loss: 0.0015
+===> Epoch[51](60/150): Avg. Loss: 0.0016
+===> Epoch[51](90/150): Avg. Loss: 0.0019
+===> Epoch[51](120/150): Avg. Loss: 0.0018
+===> Epoch[51](150/150): Avg. Loss: 0.0021
+===> Avg. PSNR: 31.5793 dB
+===> Avg. Loss: 0.0015
+===> Epoch[52](30/150): Avg. Loss: 0.0021
+===> Epoch[52](60/150): Avg. Loss: 0.0020
+===> Epoch[52](90/150): Avg. Loss: 0.0019
+===> Epoch[52](120/150): Avg. Loss: 0.0019
+===> Epoch[52](150/150): Avg. Loss: 0.0018
+===> Avg. PSNR: 31.4995 dB
+===> Avg. Loss: 0.0015
+===> Epoch[53](30/150): Avg. Loss: 0.0018
+===> Epoch[53](60/150): Avg. Loss: 0.0019
+===> Epoch[53](90/150): Avg. Loss: 0.0016
+===> Epoch[53](120/150): Avg. Loss: 0.0018
+===> Epoch[53](150/150): Avg. Loss: 0.0018
+===> Avg. PSNR: 30.4224 dB
+===> Avg. Loss: 0.0018
+===> Epoch[54](30/150): Avg. Loss: 0.0017
+===> Epoch[54](60/150): Avg. Loss: 0.0018
+===> Epoch[54](90/150): Avg. Loss: 0.0016
+===> Epoch[54](120/150): Avg. Loss: 0.0017
+===> Epoch[54](150/150): Avg. Loss: 0.0016
+===> Avg. PSNR: 31.2203 dB
+===> Avg. Loss: 0.0016
+===> Epoch[55](30/150): Avg. Loss: 0.0018
+===> Epoch[55](60/150): Avg. Loss: 0.0019
+===> Epoch[55](90/150): Avg. Loss: 0.0017
+===> Epoch[55](120/150): Avg. Loss: 0.0017
+===> Epoch[55](150/150): Avg. Loss: 0.0016
+===> Avg. PSNR: 31.0238 dB
+===> Avg. Loss: 0.0016
+===> Epoch[56](30/150): Avg. Loss: 0.0016
+===> Epoch[56](60/150): Avg. Loss: 0.0017
+===> Epoch[56](90/150): Avg. Loss: 0.0017
+===> Epoch[56](120/150): Avg. Loss: 0.0019
+===> Epoch[56](150/150): Avg. Loss: 0.0018
+===> Avg. PSNR: 31.8696 dB
+===> Avg. Loss: 0.0013
+===> Epoch[57](30/150): Avg. Loss: 0.0018
+===> Epoch[57](60/150): Avg. Loss: 0.0018
+===> Epoch[57](90/150): Avg. Loss: 0.0017
+===> Epoch[57](120/150): Avg. Loss: 0.0018
+===> Epoch[57](150/150): Avg. Loss: 0.0019
+===> Avg. PSNR: 31.5335 dB
+===> Avg. Loss: 0.0015
+===> Epoch[58](30/150): Avg. Loss: 0.0015
+===> Epoch[58](60/150): Avg. Loss: 0.0017
+===> Epoch[58](90/150): Avg. Loss: 0.0019
+===> Epoch[58](120/150): Avg. Loss: 0.0019
+===> Epoch[58](150/150): Avg. Loss: 0.0015
+===> Avg. PSNR: 31.4202 dB
+===> Avg. Loss: 0.0014
+===> Epoch[59](30/150): Avg. Loss: 0.0017
+===> Epoch[59](60/150): Avg. Loss: 0.0016
+===> Epoch[59](90/150): Avg. Loss: 0.0014
+===> Epoch[59](120/150): Avg. Loss: 0.0015
+===> Epoch[59](150/150): Avg. Loss: 0.0014
+===> Avg. PSNR: 31.3665 dB
+===> Avg. Loss: 0.0014
+===> Epoch[60](30/150): Avg. Loss: 0.0019
+===> Epoch[60](60/150): Avg. Loss: 0.0016
+===> Epoch[60](90/150): Avg. Loss: 0.0016
+===> Epoch[60](120/150): Avg. Loss: 0.0015
+===> Epoch[60](150/150): Avg. Loss: 0.0016
+===> Avg. PSNR: 31.6836 dB
+===> Avg. Loss: 0.0014
+===> Epoch[61](30/150): Avg. Loss: 0.0016
+===> Epoch[61](60/150): Avg. Loss: 0.0016
+===> Epoch[61](90/150): Avg. Loss: 0.0016
+===> Epoch[61](120/150): Avg. Loss: 0.0015
+===> Epoch[61](150/150): Avg. Loss: 0.0017
+===> Avg. PSNR: 31.2354 dB
+===> Avg. Loss: 0.0016
+===> Epoch[62](30/150): Avg. Loss: 0.0014
+===> Epoch[62](60/150): Avg. Loss: 0.0016
+===> Epoch[62](90/150): Avg. Loss: 0.0017
+===> Epoch[62](120/150): Avg. Loss: 0.0018
+===> Epoch[62](150/150): Avg. Loss: 0.0017
+===> Avg. PSNR: 31.4125 dB
+===> Avg. Loss: 0.0017
+===> Epoch[63](30/150): Avg. Loss: 0.0016
+===> Epoch[63](60/150): Avg. Loss: 0.0015
+===> Epoch[63](90/150): Avg. Loss: 0.0014
+===> Epoch[63](120/150): Avg. Loss: 0.0015
+===> Epoch[63](150/150): Avg. Loss: 0.0015
+===> Avg. PSNR: 31.7299 dB
+===> Avg. Loss: 0.0015
+===> Epoch[64](30/150): Avg. Loss: 0.0016
+===> Epoch[64](60/150): Avg. Loss: 0.0016
+===> Epoch[64](90/150): Avg. Loss: 0.0018
+===> Epoch[64](120/150): Avg. Loss: 0.0015
+===> Epoch[64](150/150): Avg. Loss: 0.0017
+===> Avg. PSNR: 31.2763 dB
+===> Avg. Loss: 0.0016
+===> Epoch[65](30/150): Avg. Loss: 0.0013
+===> Epoch[65](60/150): Avg. Loss: 0.0016
+===> Epoch[65](90/150): Avg. Loss: 0.0015
+===> Epoch[65](120/150): Avg. Loss: 0.0015
+===> Epoch[65](150/150): Avg. Loss: 0.0017
+===> Avg. PSNR: 31.8094 dB
+===> Avg. Loss: 0.0013
+===> Epoch[66](30/150): Avg. Loss: 0.0014
+===> Epoch[66](60/150): Avg. Loss: 0.0016
+===> Epoch[66](90/150): Avg. Loss: 0.0014
+===> Epoch[66](120/150): Avg. Loss: 0.0017
+===> Epoch[66](150/150): Avg. Loss: 0.0016
+===> Avg. PSNR: 31.4029 dB
+===> Avg. Loss: 0.0015
+===> Epoch[67](30/150): Avg. Loss: 0.0013
+===> Epoch[67](60/150): Avg. Loss: 0.0015
+===> Epoch[67](90/150): Avg. Loss: 0.0016
+===> Epoch[67](120/150): Avg. Loss: 0.0016
+===> Epoch[67](150/150): Avg. Loss: 0.0017
+===> Avg. PSNR: 31.9555 dB
+===> Avg. Loss: 0.0013
+===> Epoch[68](30/150): Avg. Loss: 0.0015
+===> Epoch[68](60/150): Avg. Loss: 0.0016
+===> Epoch[68](90/150): Avg. Loss: 0.0015
+===> Epoch[68](120/150): Avg. Loss: 0.0015
+===> Epoch[68](150/150): Avg. Loss: 0.0016
+===> Avg. PSNR: 32.0424 dB
+===> Avg. Loss: 0.0012
+===> Epoch[69](30/150): Avg. Loss: 0.0014
+===> Epoch[69](60/150): Avg. Loss: 0.0015
+===> Epoch[69](90/150): Avg. Loss: 0.0015
+===> Epoch[69](120/150): Avg. Loss: 0.0014
+===> Epoch[69](150/150): Avg. Loss: 0.0014
+===> Avg. PSNR: 31.0034 dB
+===> Avg. Loss: 0.0017
+===> Epoch[70](30/150): Avg. Loss: 0.0017
+===> Epoch[70](60/150): Avg. Loss: 0.0017
+===> Epoch[70](90/150): Avg. Loss: 0.0013
+===> Epoch[70](120/150): Avg. Loss: 0.0015
+===> Epoch[70](150/150): Avg. Loss: 0.0015
+===> Avg. PSNR: 31.5444 dB
+===> Avg. Loss: 0.0014
+===> Epoch[71](30/150): Avg. Loss: 0.0015
+===> Epoch[71](60/150): Avg. Loss: 0.0016
+===> Epoch[71](90/150): Avg. Loss: 0.0015
+===> Epoch[71](120/150): Avg. Loss: 0.0014
+===> Epoch[71](150/150): Avg. Loss: 0.0014
+===> Avg. PSNR: 31.5052 dB
+===> Avg. Loss: 0.0015
+===> Epoch[72](30/150): Avg. Loss: 0.0015
+===> Epoch[72](60/150): Avg. Loss: 0.0014
+===> Epoch[72](90/150): Avg. Loss: 0.0015
+===> Epoch[72](120/150): Avg. Loss: 0.0015
+===> Epoch[72](150/150): Avg. Loss: 0.0014
+===> Avg. PSNR: 31.6357 dB
+===> Avg. Loss: 0.0014
+===> Epoch[73](30/150): Avg. Loss: 0.0016
+===> Epoch[73](60/150): Avg. Loss: 0.0014
+===> Epoch[73](90/150): Avg. Loss: 0.0014
+===> Epoch[73](120/150): Avg. Loss: 0.0015
+===> Epoch[73](150/150): Avg. Loss: 0.0015
+===> Avg. PSNR: 32.2268 dB
+===> Avg. Loss: 0.0012
+===> Epoch[74](30/150): Avg. Loss: 0.0013
+===> Epoch[74](60/150): Avg. Loss: 0.0014
+===> Epoch[74](90/150): Avg. Loss: 0.0013
+===> Epoch[74](120/150): Avg. Loss: 0.0015
+===> Epoch[74](150/150): Avg. Loss: 0.0013
+===> Avg. PSNR: 31.9144 dB
+===> Avg. Loss: 0.0013
+===> Epoch[75](30/150): Avg. Loss: 0.0013
+===> Epoch[75](60/150): Avg. Loss: 0.0013
+===> Epoch[75](90/150): Avg. Loss: 0.0015
+===> Epoch[75](120/150): Avg. Loss: 0.0015
+===> Epoch[75](150/150): Avg. Loss: 0.0016
+===> Avg. PSNR: 31.6496 dB
+===> Avg. Loss: 0.0014
+===> Epoch[76](30/150): Avg. Loss: 0.0014
+===> Epoch[76](60/150): Avg. Loss: 0.0015
+===> Epoch[76](90/150): Avg. Loss: 0.0014
+===> Epoch[76](120/150): Avg. Loss: 0.0014
+===> Epoch[76](150/150): Avg. Loss: 0.0014
+===> Avg. PSNR: 32.1432 dB
+===> Avg. Loss: 0.0012
+===> Epoch[77](30/150): Avg. Loss: 0.0013
+===> Epoch[77](60/150): Avg. Loss: 0.0014
+===> Epoch[77](90/150): Avg. Loss: 0.0013
+===> Epoch[77](120/150): Avg. Loss: 0.0014
+===> Epoch[77](150/150): Avg. Loss: 0.0013
+===> Avg. PSNR: 32.0274 dB
+===> Avg. Loss: 0.0012
+===> Epoch[78](30/150): Avg. Loss: 0.0015
+===> Epoch[78](60/150): Avg. Loss: 0.0015
+===> Epoch[78](90/150): Avg. Loss: 0.0014
+===> Epoch[78](120/150): Avg. Loss: 0.0013
+===> Epoch[78](150/150): Avg. Loss: 0.0013
+===> Avg. PSNR: 31.8311 dB
+===> Avg. Loss: 0.0014
+===> Epoch[79](30/150): Avg. Loss: 0.0016
+===> Epoch[79](60/150): Avg. Loss: 0.0012
+===> Epoch[79](90/150): Avg. Loss: 0.0012
+===> Epoch[79](120/150): Avg. Loss: 0.0012
+===> Epoch[79](150/150): Avg. Loss: 0.0013
+===> Avg. PSNR: 31.5951 dB
+===> Avg. Loss: 0.0015
+===> Epoch[80](30/150): Avg. Loss: 0.0014
+===> Epoch[80](60/150): Avg. Loss: 0.0013
+===> Epoch[80](90/150): Avg. Loss: 0.0013
+===> Epoch[80](120/150): Avg. Loss: 0.0013
+===> Epoch[80](150/150): Avg. Loss: 0.0014
+===> Avg. PSNR: 32.0891 dB
+===> Avg. Loss: 0.0012
+===> Epoch[81](30/150): Avg. Loss: 0.0014
+===> Epoch[81](60/150): Avg. Loss: 0.0014
+===> Epoch[81](90/150): Avg. Loss: 0.0014
+===> Epoch[81](120/150): Avg. Loss: 0.0013
+===> Epoch[81](150/150): Avg. Loss: 0.0014
+===> Avg. PSNR: 32.0697 dB
+===> Avg. Loss: 0.0013
+===> Epoch[82](30/150): Avg. Loss: 0.0013
+===> Epoch[82](60/150): Avg. Loss: 0.0013
+===> Epoch[82](90/150): Avg. Loss: 0.0013
+===> Epoch[82](120/150): Avg. Loss: 0.0014
+===> Epoch[82](150/150): Avg. Loss: 0.0014
+===> Avg. PSNR: 32.0298 dB
+===> Avg. Loss: 0.0014
+===> Epoch[83](30/150): Avg. Loss: 0.0016
+===> Epoch[83](60/150): Avg. Loss: 0.0012
+===> Epoch[83](90/150): Avg. Loss: 0.0013
+===> Epoch[83](120/150): Avg. Loss: 0.0013
+===> Epoch[83](150/150): Avg. Loss: 0.0012
+===> Avg. PSNR: 32.4214 dB
+===> Avg. Loss: 0.0011
+===> Epoch[84](30/150): Avg. Loss: 0.0012
+===> Epoch[84](60/150): Avg. Loss: 0.0013
+===> Epoch[84](90/150): Avg. Loss: 0.0012
+===> Epoch[84](120/150): Avg. Loss: 0.0011
+===> Epoch[84](150/150): Avg. Loss: 0.0013
+===> Avg. PSNR: 32.0267 dB
+===> Avg. Loss: 0.0013
+===> Epoch[85](30/150): Avg. Loss: 0.0011
+===> Epoch[85](60/150): Avg. Loss: 0.0011
+===> Epoch[85](90/150): Avg. Loss: 0.0014
+===> Epoch[85](120/150): Avg. Loss: 0.0013
+===> Epoch[85](150/150): Avg. Loss: 0.0018
+===> Avg. PSNR: 31.1269 dB
+===> Avg. Loss: 0.0016
+===> Epoch[86](30/150): Avg. Loss: 0.0012
+===> Epoch[86](60/150): Avg. Loss: 0.0011
+===> Epoch[86](90/150): Avg. Loss: 0.0013
+===> Epoch[86](120/150): Avg. Loss: 0.0015
+===> Epoch[86](150/150): Avg. Loss: 0.0014
+===> Avg. PSNR: 32.0237 dB
+===> Avg. Loss: 0.0012
+===> Epoch[87](30/150): Avg. Loss: 0.0013
+===> Epoch[87](60/150): Avg. Loss: 0.0013
+===> Epoch[87](90/150): Avg. Loss: 0.0014
+===> Epoch[87](120/150): Avg. Loss: 0.0012
+===> Epoch[87](150/150): Avg. Loss: 0.0013
+===> Avg. PSNR: 31.7743 dB
+===> Avg. Loss: 0.0015
+===> Epoch[88](30/150): Avg. Loss: 0.0013
+===> Epoch[88](60/150): Avg. Loss: 0.0016
+===> Epoch[88](90/150): Avg. Loss: 0.0016
+===> Epoch[88](120/150): Avg. Loss: 0.0015
+===> Epoch[88](150/150): Avg. Loss: 0.0013
+===> Avg. PSNR: 32.6977 dB
+===> Avg. Loss: 0.0010
+===> Epoch[89](30/150): Avg. Loss: 0.0012
+===> Epoch[89](60/150): Avg. Loss: 0.0011
+===> Epoch[89](90/150): Avg. Loss: 0.0011
+===> Epoch[89](120/150): Avg. Loss: 0.0011
+===> Epoch[89](150/150): Avg. Loss: 0.0012
+===> Avg. PSNR: 32.7600 dB
+===> Avg. Loss: 0.0010
+===> Epoch[90](30/150): Avg. Loss: 0.0011
+===> Epoch[90](60/150): Avg. Loss: 0.0011
+===> Epoch[90](90/150): Avg. Loss: 0.0010
+===> Epoch[90](120/150): Avg. Loss: 0.0012
+===> Epoch[90](150/150): Avg. Loss: 0.0011
+===> Avg. PSNR: 32.3883 dB
+===> Avg. Loss: 0.0012
+===> Epoch[91](30/150): Avg. Loss: 0.0012
+===> Epoch[91](60/150): Avg. Loss: 0.0010
+===> Epoch[91](90/150): Avg. Loss: 0.0010
+===> Epoch[91](120/150): Avg. Loss: 0.0013
+===> Epoch[91](150/150): Avg. Loss: 0.0010
+===> Avg. PSNR: 32.7511 dB
+===> Avg. Loss: 0.0010
+===> Epoch[92](30/150): Avg. Loss: 0.0012
+===> Epoch[92](60/150): Avg. Loss: 0.0011
+===> Epoch[92](90/150): Avg. Loss: 0.0011
+===> Epoch[92](120/150): Avg. Loss: 0.0012
+===> Epoch[92](150/150): Avg. Loss: 0.0012
+===> Avg. PSNR: 32.2429 dB
+===> Avg. Loss: 0.0015
+===> Epoch[93](30/150): Avg. Loss: 0.0013
+===> Epoch[93](60/150): Avg. Loss: 0.0012
+===> Epoch[93](90/150): Avg. Loss: 0.0014
+===> Epoch[93](120/150): Avg. Loss: 0.0011
+===> Epoch[93](150/150): Avg. Loss: 0.0012
+===> Avg. PSNR: 32.7338 dB
+===> Avg. Loss: 0.0011
+===> Epoch[94](30/150): Avg. Loss: 0.0013
+===> Epoch[94](60/150): Avg. Loss: 0.0010
+===> Epoch[94](90/150): Avg. Loss: 0.0011
+===> Epoch[94](120/150): Avg. Loss: 0.0010
+===> Epoch[94](150/150): Avg. Loss: 0.0010
+===> Avg. PSNR: 32.6843 dB
+===> Avg. Loss: 0.0011
+===> Epoch[95](30/150): Avg. Loss: 0.0011
+===> Epoch[95](60/150): Avg. Loss: 0.0010
+===> Epoch[95](90/150): Avg. Loss: 0.0011
+===> Epoch[95](120/150): Avg. Loss: 0.0012
+===> Epoch[95](150/150): Avg. Loss: 0.0011
+===> Avg. PSNR: 32.7738 dB
+===> Avg. Loss: 0.0011
+===> Epoch[96](30/150): Avg. Loss: 0.0010
+===> Epoch[96](60/150): Avg. Loss: 0.0010
+===> Epoch[96](90/150): Avg. Loss: 0.0012
+===> Epoch[96](120/150): Avg. Loss: 0.0010
+===> Epoch[96](150/150): Avg. Loss: 0.0011
+===> Avg. PSNR: 32.8520 dB
+===> Avg. Loss: 0.0010
+===> Epoch[97](30/150): Avg. Loss: 0.0010
+===> Epoch[97](60/150): Avg. Loss: 0.0010
+===> Epoch[97](90/150): Avg. Loss: 0.0010
+===> Epoch[97](120/150): Avg. Loss: 0.0010
+===> Epoch[97](150/150): Avg. Loss: 0.0012
+===> Avg. PSNR: 32.2185 dB
+===> Avg. Loss: 0.0012
+===> Epoch[98](30/150): Avg. Loss: 0.0010
+===> Epoch[98](60/150): Avg. Loss: 0.0010
+===> Epoch[98](90/150): Avg. Loss: 0.0010
+===> Epoch[98](120/150): Avg. Loss: 0.0010
+===> Epoch[98](150/150): Avg. Loss: 0.0010
+===> Avg. PSNR: 32.9207 dB
+===> Avg. Loss: 0.0011
+===> Epoch[99](30/150): Avg. Loss: 0.0011
+===> Epoch[99](60/150): Avg. Loss: 0.0009
+===> Epoch[99](90/150): Avg. Loss: 0.0009
+===> Epoch[99](120/150): Avg. Loss: 0.0009
+===> Epoch[99](150/150): Avg. Loss: 0.0011
+===> Avg. PSNR: 33.1116 dB
+===> Avg. Loss: 0.0010
+===> Epoch[100](30/150): Avg. Loss: 0.0010
+===> Epoch[100](60/150): Avg. Loss: 0.0009
+===> Epoch[100](90/150): Avg. Loss: 0.0008
+===> Epoch[100](120/150): Avg. Loss: 0.0011
+===> Epoch[100](150/150): Avg. Loss: 0.0010
+===> Avg. PSNR: 32.5775 dB
+===> Avg. Loss: 0.0011
+===> Epoch[101](30/150): Avg. Loss: 0.0011
+===> Epoch[101](60/150): Avg. Loss: 0.0009
+===> Epoch[101](90/150): Avg. Loss: 0.0011
+===> Epoch[101](120/150): Avg. Loss: 0.0011
+===> Epoch[101](150/150): Avg. Loss: 0.0011
+===> Avg. PSNR: 32.2846 dB
+===> Avg. Loss: 0.0012
+===> Epoch[102](30/150): Avg. Loss: 0.0009
+===> Epoch[102](60/150): Avg. Loss: 0.0010
+===> Epoch[102](90/150): Avg. Loss: 0.0010
+===> Epoch[102](120/150): Avg. Loss: 0.0011
+===> Epoch[102](150/150): Avg. Loss: 0.0011
+===> Avg. PSNR: 32.9325 dB
+===> Avg. Loss: 0.0010
+===> Epoch[103](30/150): Avg. Loss: 0.0009
+===> Epoch[103](60/150): Avg. Loss: 0.0009
+===> Epoch[103](90/150): Avg. Loss: 0.0010
+===> Epoch[103](120/150): Avg. Loss: 0.0010
+===> Epoch[103](150/150): Avg. Loss: 0.0010
+===> Avg. PSNR: 33.0411 dB
+===> Avg. Loss: 0.0009
+===> Epoch[104](30/150): Avg. Loss: 0.0010
+===> Epoch[104](60/150): Avg. Loss: 0.0009
+===> Epoch[104](90/150): Avg. Loss: 0.0008
+===> Epoch[104](120/150): Avg. Loss: 0.0008
+===> Epoch[104](150/150): Avg. Loss: 0.0010
+===> Avg. PSNR: 33.0964 dB
+===> Avg. Loss: 0.0010
+===> Epoch[105](30/150): Avg. Loss: 0.0010
+===> Epoch[105](60/150): Avg. Loss: 0.0011
+===> Epoch[105](90/150): Avg. Loss: 0.0009
+===> Epoch[105](120/150): Avg. Loss: 0.0010
+===> Epoch[105](150/150): Avg. Loss: 0.0011
+===> Avg. PSNR: 32.9243 dB
+===> Avg. Loss: 0.0010
+===> Epoch[106](30/150): Avg. Loss: 0.0009
+===> Epoch[106](60/150): Avg. Loss: 0.0009
+===> Epoch[106](90/150): Avg. Loss: 0.0009
+===> Epoch[106](120/150): Avg. Loss: 0.0010
+===> Epoch[106](150/150): Avg. Loss: 0.0009
+===> Avg. PSNR: 32.9780 dB
+===> Avg. Loss: 0.0010
+===> Epoch[107](30/150): Avg. Loss: 0.0009
+===> Epoch[107](60/150): Avg. Loss: 0.0009
+===> Epoch[107](90/150): Avg. Loss: 0.0010
+===> Epoch[107](120/150): Avg. Loss: 0.0009
+===> Epoch[107](150/150): Avg. Loss: 0.0008
+===> Avg. PSNR: 32.9807 dB
+===> Avg. Loss: 0.0010
+===> Epoch[108](30/150): Avg. Loss: 0.0008
+===> Epoch[108](60/150): Avg. Loss: 0.0008
+===> Epoch[108](90/150): Avg. Loss: 0.0009
+===> Epoch[108](120/150): Avg. Loss: 0.0009
+===> Epoch[108](150/150): Avg. Loss: 0.0008
+===> Avg. PSNR: 33.1474 dB
+===> Avg. Loss: 0.0009
+===> Epoch[109](30/150): Avg. Loss: 0.0009
+===> Epoch[109](60/150): Avg. Loss: 0.0008
+===> Epoch[109](90/150): Avg. Loss: 0.0009
+===> Epoch[109](120/150): Avg. Loss: 0.0010
+===> Epoch[109](150/150): Avg. Loss: 0.0010
+===> Avg. PSNR: 33.0357 dB
+===> Avg. Loss: 0.0010
+===> Epoch[110](30/150): Avg. Loss: 0.0010
+===> Epoch[110](60/150): Avg. Loss: 0.0009
+===> Epoch[110](90/150): Avg. Loss: 0.0009
+===> Epoch[110](120/150): Avg. Loss: 0.0009
+===> Epoch[110](150/150): Avg. Loss: 0.0008
+===> Avg. PSNR: 33.2980 dB
+===> Avg. Loss: 0.0009
+===> Epoch[111](30/150): Avg. Loss: 0.0009
+===> Epoch[111](60/150): Avg. Loss: 0.0009
+===> Epoch[111](90/150): Avg. Loss: 0.0008
+===> Epoch[111](120/150): Avg. Loss: 0.0008
+===> Epoch[111](150/150): Avg. Loss: 0.0009
+===> Avg. PSNR: 33.1712 dB
+===> Avg. Loss: 0.0010
+===> Epoch[112](30/150): Avg. Loss: 0.0009
+===> Epoch[112](60/150): Avg. Loss: 0.0009
+===> Epoch[112](90/150): Avg. Loss: 0.0008
+===> Epoch[112](120/150): Avg. Loss: 0.0008
+===> Epoch[112](150/150): Avg. Loss: 0.0009
+===> Avg. PSNR: 33.4768 dB
+===> Avg. Loss: 0.0009
+===> Epoch[113](30/150): Avg. Loss: 0.0008
+===> Epoch[113](60/150): Avg. Loss: 0.0008
+===> Epoch[113](90/150): Avg. Loss: 0.0008
+===> Epoch[113](120/150): Avg. Loss: 0.0010
+===> Epoch[113](150/150): Avg. Loss: 0.0009
+===> Avg. PSNR: 33.0650 dB
+===> Avg. Loss: 0.0009
+===> Epoch[114](30/150): Avg. Loss: 0.0009
+===> Epoch[114](60/150): Avg. Loss: 0.0008
+===> Epoch[114](90/150): Avg. Loss: 0.0008
+===> Epoch[114](120/150): Avg. Loss: 0.0008
+===> Epoch[114](150/150): Avg. Loss: 0.0008
+===> Avg. PSNR: 33.2960 dB
+===> Avg. Loss: 0.0009
+===> Epoch[115](30/150): Avg. Loss: 0.0007
+===> Epoch[115](60/150): Avg. Loss: 0.0008
+===> Epoch[115](90/150): Avg. Loss: 0.0007
+===> Epoch[115](120/150): Avg. Loss: 0.0008
+===> Epoch[115](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 33.2008 dB
+===> Avg. Loss: 0.0010
+===> Epoch[116](30/150): Avg. Loss: 0.0008
+===> Epoch[116](60/150): Avg. Loss: 0.0007
+===> Epoch[116](90/150): Avg. Loss: 0.0008
+===> Epoch[116](120/150): Avg. Loss: 0.0009
+===> Epoch[116](150/150): Avg. Loss: 0.0009
+===> Avg. PSNR: 33.0750 dB
+===> Avg. Loss: 0.0010
+===> Epoch[117](30/150): Avg. Loss: 0.0008
+===> Epoch[117](60/150): Avg. Loss: 0.0008
+===> Epoch[117](90/150): Avg. Loss: 0.0007
+===> Epoch[117](120/150): Avg. Loss: 0.0010
+===> Epoch[117](150/150): Avg. Loss: 0.0009
+===> Avg. PSNR: 32.3218 dB
+===> Avg. Loss: 0.0013
+===> Epoch[118](30/150): Avg. Loss: 0.0008
+===> Epoch[118](60/150): Avg. Loss: 0.0008
+===> Epoch[118](90/150): Avg. Loss: 0.0008
+===> Epoch[118](120/150): Avg. Loss: 0.0008
+===> Epoch[118](150/150): Avg. Loss: 0.0009
+===> Avg. PSNR: 33.0208 dB
+===> Avg. Loss: 0.0010
+===> Epoch[119](30/150): Avg. Loss: 0.0008
+===> Epoch[119](60/150): Avg. Loss: 0.0007
+===> Epoch[119](90/150): Avg. Loss: 0.0008
+===> Epoch[119](120/150): Avg. Loss: 0.0007
+===> Epoch[119](150/150): Avg. Loss: 0.0008
+===> Avg. PSNR: 33.4706 dB
+===> Avg. Loss: 0.0009
+===> Epoch[120](30/150): Avg. Loss: 0.0008
+===> Epoch[120](60/150): Avg. Loss: 0.0008
+===> Epoch[120](90/150): Avg. Loss: 0.0008
+===> Epoch[120](120/150): Avg. Loss: 0.0007
+===> Epoch[120](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 33.8123 dB
+===> Avg. Loss: 0.0008
+training log record, random seed=777
+dataset configuration: epoch size = 150, batch size = 16, patch size = 256
+===> Epoch[121](30/150): Avg. Loss: 0.0008
+===> Epoch[121](60/150): Avg. Loss: 0.0007
+===> Epoch[121](90/150): Avg. Loss: 0.0008
+===> Epoch[121](120/150): Avg. Loss: 0.0008
+===> Epoch[121](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 33.1770 dB
+===> Avg. Loss: 0.0009
+===> Epoch[122](30/150): Avg. Loss: 0.0007
+===> Epoch[122](60/150): Avg. Loss: 0.0007
+===> Epoch[122](90/150): Avg. Loss: 0.0007
+===> Epoch[122](120/150): Avg. Loss: 0.0008
+===> Epoch[122](150/150): Avg. Loss: 0.0008
+===> Avg. PSNR: 32.8667 dB
+===> Avg. Loss: 0.0010
+===> Epoch[123](30/150): Avg. Loss: 0.0007
+===> Epoch[123](60/150): Avg. Loss: 0.0007
+===> Epoch[123](90/150): Avg. Loss: 0.0007
+===> Epoch[123](120/150): Avg. Loss: 0.0007
+===> Epoch[123](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 33.3645 dB
+===> Avg. Loss: 0.0009
+===> Epoch[124](30/150): Avg. Loss: 0.0007
+===> Epoch[124](60/150): Avg. Loss: 0.0007
+===> Epoch[124](90/150): Avg. Loss: 0.0008
+===> Epoch[124](120/150): Avg. Loss: 0.0006
+===> Epoch[124](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.5880 dB
+===> Avg. Loss: 0.0008
+===> Epoch[125](30/150): Avg. Loss: 0.0007
+===> Epoch[125](60/150): Avg. Loss: 0.0007
+===> Epoch[125](90/150): Avg. Loss: 0.0006
+===> Epoch[125](120/150): Avg. Loss: 0.0007
+===> Epoch[125](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 33.0628 dB
+===> Avg. Loss: 0.0010
+===> Epoch[126](30/150): Avg. Loss: 0.0007
+===> Epoch[126](60/150): Avg. Loss: 0.0007
+===> Epoch[126](90/150): Avg. Loss: 0.0006
+===> Epoch[126](120/150): Avg. Loss: 0.0006
+===> Epoch[126](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.4579 dB
+===> Avg. Loss: 0.0009
+===> Epoch[127](30/150): Avg. Loss: 0.0009
+===> Epoch[127](60/150): Avg. Loss: 0.0008
+===> Epoch[127](90/150): Avg. Loss: 0.0009
+===> Epoch[127](120/150): Avg. Loss: 0.0008
+===> Epoch[127](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 33.5309 dB
+===> Avg. Loss: 0.0009
+===> Epoch[128](30/150): Avg. Loss: 0.0007
+===> Epoch[128](60/150): Avg. Loss: 0.0007
+===> Epoch[128](90/150): Avg. Loss: 0.0007
+===> Epoch[128](120/150): Avg. Loss: 0.0006
+===> Epoch[128](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 33.5839 dB
+===> Avg. Loss: 0.0009
+===> Epoch[129](30/150): Avg. Loss: 0.0007
+===> Epoch[129](60/150): Avg. Loss: 0.0007
+===> Epoch[129](90/150): Avg. Loss: 0.0006
+===> Epoch[129](120/150): Avg. Loss: 0.0006
+===> Epoch[129](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 33.5888 dB
+===> Avg. Loss: 0.0008
+===> Epoch[130](30/150): Avg. Loss: 0.0008
+===> Epoch[130](60/150): Avg. Loss: 0.0009
+===> Epoch[130](90/150): Avg. Loss: 0.0009
+===> Epoch[130](120/150): Avg. Loss: 0.0008
+===> Epoch[130](150/150): Avg. Loss: 0.0008
+===> Avg. PSNR: 33.8433 dB
+===> Avg. Loss: 0.0008
+===> Epoch[131](30/150): Avg. Loss: 0.0007
+===> Epoch[131](60/150): Avg. Loss: 0.0006
+===> Epoch[131](90/150): Avg. Loss: 0.0006
+===> Epoch[131](120/150): Avg. Loss: 0.0006
+===> Epoch[131](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.8662 dB
+===> Avg. Loss: 0.0008
+===> Epoch[132](30/150): Avg. Loss: 0.0007
+===> Epoch[132](60/150): Avg. Loss: 0.0007
+===> Epoch[132](90/150): Avg. Loss: 0.0007
+===> Epoch[132](120/150): Avg. Loss: 0.0006
+===> Epoch[132](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.5366 dB
+===> Avg. Loss: 0.0009
+===> Epoch[133](30/150): Avg. Loss: 0.0006
+===> Epoch[133](60/150): Avg. Loss: 0.0006
+===> Epoch[133](90/150): Avg. Loss: 0.0006
+===> Epoch[133](120/150): Avg. Loss: 0.0006
+===> Epoch[133](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.7581 dB
+===> Avg. Loss: 0.0008
+===> Epoch[134](30/150): Avg. Loss: 0.0006
+===> Epoch[134](60/150): Avg. Loss: 0.0006
+===> Epoch[134](90/150): Avg. Loss: 0.0006
+===> Epoch[134](120/150): Avg. Loss: 0.0007
+===> Epoch[134](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 32.7069 dB
+===> Avg. Loss: 0.0013
+===> Epoch[135](30/150): Avg. Loss: 0.0006
+===> Epoch[135](60/150): Avg. Loss: 0.0007
+===> Epoch[135](90/150): Avg. Loss: 0.0007
+===> Epoch[135](120/150): Avg. Loss: 0.0008
+===> Epoch[135](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.4075 dB
+===> Avg. Loss: 0.0009
+===> Epoch[136](30/150): Avg. Loss: 0.0006
+===> Epoch[136](60/150): Avg. Loss: 0.0006
+===> Epoch[136](90/150): Avg. Loss: 0.0006
+===> Epoch[136](120/150): Avg. Loss: 0.0006
+===> Epoch[136](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 34.0045 dB
+===> Avg. Loss: 0.0008
+===> Epoch[137](30/150): Avg. Loss: 0.0006
+===> Epoch[137](60/150): Avg. Loss: 0.0006
+===> Epoch[137](90/150): Avg. Loss: 0.0006
+===> Epoch[137](120/150): Avg. Loss: 0.0006
+===> Epoch[137](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.2313 dB
+===> Avg. Loss: 0.0011
+===> Epoch[138](30/150): Avg. Loss: 0.0006
+===> Epoch[138](60/150): Avg. Loss: 0.0006
+===> Epoch[138](90/150): Avg. Loss: 0.0006
+===> Epoch[138](120/150): Avg. Loss: 0.0006
+===> Epoch[138](150/150): Avg. Loss: 0.0007
+===> Avg. PSNR: 33.5289 dB
+===> Avg. Loss: 0.0009
+===> Epoch[139](30/150): Avg. Loss: 0.0006
+===> Epoch[139](60/150): Avg. Loss: 0.0005
+===> Epoch[139](90/150): Avg. Loss: 0.0006
+===> Epoch[139](120/150): Avg. Loss: 0.0006
+===> Epoch[139](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.1334 dB
+===> Avg. Loss: 0.0012
+===> Epoch[140](30/150): Avg. Loss: 0.0006
+===> Epoch[140](60/150): Avg. Loss: 0.0006
+===> Epoch[140](90/150): Avg. Loss: 0.0006
+===> Epoch[140](120/150): Avg. Loss: 0.0006
+===> Epoch[140](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.5083 dB
+===> Avg. Loss: 0.0011
+===> Epoch[141](30/150): Avg. Loss: 0.0006
+===> Epoch[141](60/150): Avg. Loss: 0.0005
+===> Epoch[141](90/150): Avg. Loss: 0.0006
+===> Epoch[141](120/150): Avg. Loss: 0.0006
+===> Epoch[141](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.7325 dB
+===> Avg. Loss: 0.0009
+===> Epoch[142](30/150): Avg. Loss: 0.0006
+===> Epoch[142](60/150): Avg. Loss: 0.0006
+===> Epoch[142](90/150): Avg. Loss: 0.0006
+===> Epoch[142](120/150): Avg. Loss: 0.0006
+===> Epoch[142](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.5132 dB
+===> Avg. Loss: 0.0009
+===> Epoch[143](30/150): Avg. Loss: 0.0005
+===> Epoch[143](60/150): Avg. Loss: 0.0006
+===> Epoch[143](90/150): Avg. Loss: 0.0005
+===> Epoch[143](120/150): Avg. Loss: 0.0005
+===> Epoch[143](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 32.9998 dB
+===> Avg. Loss: 0.0014
+===> Epoch[144](30/150): Avg. Loss: 0.0006
+===> Epoch[144](60/150): Avg. Loss: 0.0006
+===> Epoch[144](90/150): Avg. Loss: 0.0007
+===> Epoch[144](120/150): Avg. Loss: 0.0007
+===> Epoch[144](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.3858 dB
+===> Avg. Loss: 0.0010
+===> Epoch[145](30/150): Avg. Loss: 0.0006
+===> Epoch[145](60/150): Avg. Loss: 0.0006
+===> Epoch[145](90/150): Avg. Loss: 0.0006
+===> Epoch[145](120/150): Avg. Loss: 0.0005
+===> Epoch[145](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.2541 dB
+===> Avg. Loss: 0.0008
+===> Epoch[146](30/150): Avg. Loss: 0.0005
+===> Epoch[146](60/150): Avg. Loss: 0.0005
+===> Epoch[146](90/150): Avg. Loss: 0.0005
+===> Epoch[146](120/150): Avg. Loss: 0.0006
+===> Epoch[146](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.9721 dB
+===> Avg. Loss: 0.0008
+===> Epoch[147](30/150): Avg. Loss: 0.0006
+===> Epoch[147](60/150): Avg. Loss: 0.0006
+===> Epoch[147](90/150): Avg. Loss: 0.0006
+===> Epoch[147](120/150): Avg. Loss: 0.0005
+===> Epoch[147](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.7758 dB
+===> Avg. Loss: 0.0008
+===> Epoch[148](30/150): Avg. Loss: 0.0006
+===> Epoch[148](60/150): Avg. Loss: 0.0005
+===> Epoch[148](90/150): Avg. Loss: 0.0005
+===> Epoch[148](120/150): Avg. Loss: 0.0005
+===> Epoch[148](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.2610 dB
+===> Avg. Loss: 0.0011
+===> Epoch[149](30/150): Avg. Loss: 0.0005
+===> Epoch[149](60/150): Avg. Loss: 0.0005
+===> Epoch[149](90/150): Avg. Loss: 0.0005
+===> Epoch[149](120/150): Avg. Loss: 0.0005
+===> Epoch[149](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.6881 dB
+===> Avg. Loss: 0.0009
+===> Epoch[150](30/150): Avg. Loss: 0.0005
+===> Epoch[150](60/150): Avg. Loss: 0.0006
+===> Epoch[150](90/150): Avg. Loss: 0.0006
+===> Epoch[150](120/150): Avg. Loss: 0.0005
+===> Epoch[150](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.4077 dB
+===> Avg. Loss: 0.0013
+===> Epoch[151](30/150): Avg. Loss: 0.0005
+===> Epoch[151](60/150): Avg. Loss: 0.0006
+===> Epoch[151](90/150): Avg. Loss: 0.0007
+===> Epoch[151](120/150): Avg. Loss: 0.0006
+===> Epoch[151](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.7926 dB
+===> Avg. Loss: 0.0009
+===> Epoch[152](30/150): Avg. Loss: 0.0006
+===> Epoch[152](60/150): Avg. Loss: 0.0006
+===> Epoch[152](90/150): Avg. Loss: 0.0006
+===> Epoch[152](120/150): Avg. Loss: 0.0006
+===> Epoch[152](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.6486 dB
+===> Avg. Loss: 0.0009
+===> Epoch[153](30/150): Avg. Loss: 0.0007
+===> Epoch[153](60/150): Avg. Loss: 0.0007
+===> Epoch[153](90/150): Avg. Loss: 0.0006
+===> Epoch[153](120/150): Avg. Loss: 0.0006
+===> Epoch[153](150/150): Avg. Loss: 0.0006
+===> Avg. PSNR: 33.7709 dB
+===> Avg. Loss: 0.0008
+===> Epoch[154](30/150): Avg. Loss: 0.0006
+===> Epoch[154](60/150): Avg. Loss: 0.0006
+===> Epoch[154](90/150): Avg. Loss: 0.0006
+===> Epoch[154](120/150): Avg. Loss: 0.0005
+===> Epoch[154](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.7744 dB
+===> Avg. Loss: 0.0008
+===> Epoch[155](30/150): Avg. Loss: 0.0005
+===> Epoch[155](60/150): Avg. Loss: 0.0005
+===> Epoch[155](90/150): Avg. Loss: 0.0005
+===> Epoch[155](120/150): Avg. Loss: 0.0005
+===> Epoch[155](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 33.3470 dB
+===> Avg. Loss: 0.0012
+===> Epoch[156](30/150): Avg. Loss: 0.0005
+===> Epoch[156](60/150): Avg. Loss: 0.0006
+===> Epoch[156](90/150): Avg. Loss: 0.0005
+===> Epoch[156](120/150): Avg. Loss: 0.0005
+===> Epoch[156](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.2838 dB
+===> Avg. Loss: 0.0007
+===> Epoch[157](30/150): Avg. Loss: 0.0006
+===> Epoch[157](60/150): Avg. Loss: 0.0005
+===> Epoch[157](90/150): Avg. Loss: 0.0005
+===> Epoch[157](120/150): Avg. Loss: 0.0005
+===> Epoch[157](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.0561 dB
+===> Avg. Loss: 0.0008
+===> Epoch[158](30/150): Avg. Loss: 0.0004
+===> Epoch[158](60/150): Avg. Loss: 0.0005
+===> Epoch[158](90/150): Avg. Loss: 0.0005
+===> Epoch[158](120/150): Avg. Loss: 0.0006
+===> Epoch[158](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.7788 dB
+===> Avg. Loss: 0.0009
+===> Epoch[159](30/150): Avg. Loss: 0.0005
+===> Epoch[159](60/150): Avg. Loss: 0.0004
+===> Epoch[159](90/150): Avg. Loss: 0.0005
+===> Epoch[159](120/150): Avg. Loss: 0.0005
+===> Epoch[159](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.4241 dB
+===> Avg. Loss: 0.0012
+===> Epoch[160](30/150): Avg. Loss: 0.0005
+===> Epoch[160](60/150): Avg. Loss: 0.0005
+===> Epoch[160](90/150): Avg. Loss: 0.0005
+===> Epoch[160](120/150): Avg. Loss: 0.0005
+===> Epoch[160](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.3020 dB
+===> Avg. Loss: 0.0008
+===> Epoch[161](30/150): Avg. Loss: 0.0005
+===> Epoch[161](60/150): Avg. Loss: 0.0004
+===> Epoch[161](90/150): Avg. Loss: 0.0005
+===> Epoch[161](120/150): Avg. Loss: 0.0005
+===> Epoch[161](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.2688 dB
+===> Avg. Loss: 0.0008
+===> Epoch[162](30/150): Avg. Loss: 0.0005
+===> Epoch[162](60/150): Avg. Loss: 0.0004
+===> Epoch[162](90/150): Avg. Loss: 0.0004
+===> Epoch[162](120/150): Avg. Loss: 0.0005
+===> Epoch[162](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.4796 dB
+===> Avg. Loss: 0.0007
+===> Epoch[163](30/150): Avg. Loss: 0.0004
+===> Epoch[163](60/150): Avg. Loss: 0.0005
+===> Epoch[163](90/150): Avg. Loss: 0.0005
+===> Epoch[163](120/150): Avg. Loss: 0.0005
+===> Epoch[163](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.9266 dB
+===> Avg. Loss: 0.0008
+===> Epoch[164](30/150): Avg. Loss: 0.0005
+===> Epoch[164](60/150): Avg. Loss: 0.0005
+===> Epoch[164](90/150): Avg. Loss: 0.0005
+===> Epoch[164](120/150): Avg. Loss: 0.0005
+===> Epoch[164](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.8606 dB
+===> Avg. Loss: 0.0010
+===> Epoch[165](30/150): Avg. Loss: 0.0005
+===> Epoch[165](60/150): Avg. Loss: 0.0005
+===> Epoch[165](90/150): Avg. Loss: 0.0005
+===> Epoch[165](120/150): Avg. Loss: 0.0005
+===> Epoch[165](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 33.8712 dB
+===> Avg. Loss: 0.0009
+===> Epoch[166](30/150): Avg. Loss: 0.0004
+===> Epoch[166](60/150): Avg. Loss: 0.0005
+===> Epoch[166](90/150): Avg. Loss: 0.0004
+===> Epoch[166](120/150): Avg. Loss: 0.0004
+===> Epoch[166](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.2099 dB
+===> Avg. Loss: 0.0008
+===> Epoch[167](30/150): Avg. Loss: 0.0004
+===> Epoch[167](60/150): Avg. Loss: 0.0005
+===> Epoch[167](90/150): Avg. Loss: 0.0004
+===> Epoch[167](120/150): Avg. Loss: 0.0004
+===> Epoch[167](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 33.7913 dB
+===> Avg. Loss: 0.0010
+===> Epoch[168](30/150): Avg. Loss: 0.0004
+===> Epoch[168](60/150): Avg. Loss: 0.0005
+===> Epoch[168](90/150): Avg. Loss: 0.0004
+===> Epoch[168](120/150): Avg. Loss: 0.0004
+===> Epoch[168](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.9919 dB
+===> Avg. Loss: 0.0008
+===> Epoch[169](30/150): Avg. Loss: 0.0005
+===> Epoch[169](60/150): Avg. Loss: 0.0005
+===> Epoch[169](90/150): Avg. Loss: 0.0005
+===> Epoch[169](120/150): Avg. Loss: 0.0004
+===> Epoch[169](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.5888 dB
+===> Avg. Loss: 0.0008
+===> Epoch[170](30/150): Avg. Loss: 0.0005
+===> Epoch[170](60/150): Avg. Loss: 0.0005
+===> Epoch[170](90/150): Avg. Loss: 0.0005
+===> Epoch[170](120/150): Avg. Loss: 0.0004
+===> Epoch[170](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 33.7782 dB
+===> Avg. Loss: 0.0009
+===> Epoch[171](30/150): Avg. Loss: 0.0004
+===> Epoch[171](60/150): Avg. Loss: 0.0005
+===> Epoch[171](90/150): Avg. Loss: 0.0004
+===> Epoch[171](120/150): Avg. Loss: 0.0004
+===> Epoch[171](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 33.0564 dB
+===> Avg. Loss: 0.0018
+===> Epoch[172](30/150): Avg. Loss: 0.0004
+===> Epoch[172](60/150): Avg. Loss: 0.0004
+===> Epoch[172](90/150): Avg. Loss: 0.0004
+===> Epoch[172](120/150): Avg. Loss: 0.0004
+===> Epoch[172](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 33.6860 dB
+===> Avg. Loss: 0.0010
+===> Epoch[173](30/150): Avg. Loss: 0.0005
+===> Epoch[173](60/150): Avg. Loss: 0.0005
+===> Epoch[173](90/150): Avg. Loss: 0.0005
+===> Epoch[173](120/150): Avg. Loss: 0.0005
+===> Epoch[173](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 33.6075 dB
+===> Avg. Loss: 0.0009
+===> Epoch[174](30/150): Avg. Loss: 0.0005
+===> Epoch[174](60/150): Avg. Loss: 0.0005
+===> Epoch[174](90/150): Avg. Loss: 0.0005
+===> Epoch[174](120/150): Avg. Loss: 0.0004
+===> Epoch[174](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.5974 dB
+===> Avg. Loss: 0.0008
+===> Epoch[175](30/150): Avg. Loss: 0.0005
+===> Epoch[175](60/150): Avg. Loss: 0.0005
+===> Epoch[175](90/150): Avg. Loss: 0.0004
+===> Epoch[175](120/150): Avg. Loss: 0.0004
+===> Epoch[175](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.4387 dB
+===> Avg. Loss: 0.0007
+===> Epoch[176](30/150): Avg. Loss: 0.0004
+===> Epoch[176](60/150): Avg. Loss: 0.0004
+===> Epoch[176](90/150): Avg. Loss: 0.0004
+===> Epoch[176](120/150): Avg. Loss: 0.0004
+===> Epoch[176](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.5375 dB
+===> Avg. Loss: 0.0008
+===> Epoch[177](30/150): Avg. Loss: 0.0006
+===> Epoch[177](60/150): Avg. Loss: 0.0005
+===> Epoch[177](90/150): Avg. Loss: 0.0005
+===> Epoch[177](120/150): Avg. Loss: 0.0005
+===> Epoch[177](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.5637 dB
+===> Avg. Loss: 0.0008
+===> Epoch[178](30/150): Avg. Loss: 0.0004
+===> Epoch[178](60/150): Avg. Loss: 0.0004
+===> Epoch[178](90/150): Avg. Loss: 0.0004
+===> Epoch[178](120/150): Avg. Loss: 0.0004
+===> Epoch[178](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.6264 dB
+===> Avg. Loss: 0.0007
+===> Epoch[179](30/150): Avg. Loss: 0.0005
+===> Epoch[179](60/150): Avg. Loss: 0.0004
+===> Epoch[179](90/150): Avg. Loss: 0.0004
+===> Epoch[179](120/150): Avg. Loss: 0.0004
+===> Epoch[179](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.2502 dB
+===> Avg. Loss: 0.0008
+===> Epoch[180](30/150): Avg. Loss: 0.0004
+===> Epoch[180](60/150): Avg. Loss: 0.0004
+===> Epoch[180](90/150): Avg. Loss: 0.0004
+===> Epoch[180](120/150): Avg. Loss: 0.0004
+===> Epoch[180](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.3681 dB
+===> Avg. Loss: 0.0009
+training log record, random seed=777
+dataset configuration: epoch size = 150, batch size = 16, patch size = 256
+===> Epoch[181](30/150): Avg. Loss: 0.0004
+===> Epoch[181](60/150): Avg. Loss: 0.0004
+===> Epoch[181](90/150): Avg. Loss: 0.0004
+===> Epoch[181](120/150): Avg. Loss: 0.0004
+===> Epoch[181](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.5090 dB
+===> Avg. Loss: 0.0007
+===> Epoch[182](30/150): Avg. Loss: 0.0004
+===> Epoch[182](60/150): Avg. Loss: 0.0004
+===> Epoch[182](90/150): Avg. Loss: 0.0004
+===> Epoch[182](120/150): Avg. Loss: 0.0004
+===> Epoch[182](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.4245 dB
+===> Avg. Loss: 0.0007
+===> Epoch[183](30/150): Avg. Loss: 0.0004
+===> Epoch[183](60/150): Avg. Loss: 0.0004
+===> Epoch[183](90/150): Avg. Loss: 0.0004
+===> Epoch[183](120/150): Avg. Loss: 0.0004
+===> Epoch[183](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.9117 dB
+===> Avg. Loss: 0.0006
+===> Epoch[184](30/150): Avg. Loss: 0.0004
+===> Epoch[184](60/150): Avg. Loss: 0.0004
+===> Epoch[184](90/150): Avg. Loss: 0.0005
+===> Epoch[184](120/150): Avg. Loss: 0.0004
+===> Epoch[184](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.6040 dB
+===> Avg. Loss: 0.0007
+===> Epoch[185](30/150): Avg. Loss: 0.0004
+===> Epoch[185](60/150): Avg. Loss: 0.0004
+===> Epoch[185](90/150): Avg. Loss: 0.0003
+===> Epoch[185](120/150): Avg. Loss: 0.0004
+===> Epoch[185](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.3742 dB
+===> Avg. Loss: 0.0007
+===> Epoch[186](30/150): Avg. Loss: 0.0005
+===> Epoch[186](60/150): Avg. Loss: 0.0004
+===> Epoch[186](90/150): Avg. Loss: 0.0004
+===> Epoch[186](120/150): Avg. Loss: 0.0004
+===> Epoch[186](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.5319 dB
+===> Avg. Loss: 0.0007
+===> Epoch[187](30/150): Avg. Loss: 0.0005
+===> Epoch[187](60/150): Avg. Loss: 0.0004
+===> Epoch[187](90/150): Avg. Loss: 0.0004
+===> Epoch[187](120/150): Avg. Loss: 0.0004
+===> Epoch[187](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.8748 dB
+===> Avg. Loss: 0.0007
+===> Epoch[188](30/150): Avg. Loss: 0.0004
+===> Epoch[188](60/150): Avg. Loss: 0.0004
+===> Epoch[188](90/150): Avg. Loss: 0.0004
+===> Epoch[188](120/150): Avg. Loss: 0.0003
+===> Epoch[188](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.5450 dB
+===> Avg. Loss: 0.0007
+===> Epoch[189](30/150): Avg. Loss: 0.0004
+===> Epoch[189](60/150): Avg. Loss: 0.0003
+===> Epoch[189](90/150): Avg. Loss: 0.0003
+===> Epoch[189](120/150): Avg. Loss: 0.0003
+===> Epoch[189](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.2826 dB
+===> Avg. Loss: 0.0009
+===> Epoch[190](30/150): Avg. Loss: 0.0004
+===> Epoch[190](60/150): Avg. Loss: 0.0004
+===> Epoch[190](90/150): Avg. Loss: 0.0004
+===> Epoch[190](120/150): Avg. Loss: 0.0004
+===> Epoch[190](150/150): Avg. Loss: 0.0005
+===> Avg. PSNR: 34.1197 dB
+===> Avg. Loss: 0.0009
+===> Epoch[191](30/150): Avg. Loss: 0.0004
+===> Epoch[191](60/150): Avg. Loss: 0.0004
+===> Epoch[191](90/150): Avg. Loss: 0.0004
+===> Epoch[191](120/150): Avg. Loss: 0.0004
+===> Epoch[191](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.5240 dB
+===> Avg. Loss: 0.0007
+===> Epoch[192](30/150): Avg. Loss: 0.0004
+===> Epoch[192](60/150): Avg. Loss: 0.0004
+===> Epoch[192](90/150): Avg. Loss: 0.0004
+===> Epoch[192](120/150): Avg. Loss: 0.0004
+===> Epoch[192](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 33.8448 dB
+===> Avg. Loss: 0.0010
+===> Epoch[193](30/150): Avg. Loss: 0.0004
+===> Epoch[193](60/150): Avg. Loss: 0.0004
+===> Epoch[193](90/150): Avg. Loss: 0.0003
+===> Epoch[193](120/150): Avg. Loss: 0.0004
+===> Epoch[193](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.5697 dB
+===> Avg. Loss: 0.0007
+===> Epoch[194](30/150): Avg. Loss: 0.0004
+===> Epoch[194](60/150): Avg. Loss: 0.0004
+===> Epoch[194](90/150): Avg. Loss: 0.0004
+===> Epoch[194](120/150): Avg. Loss: 0.0004
+===> Epoch[194](150/150): Avg. Loss: 0.0003
+===> Avg. PSNR: 34.1419 dB
+===> Avg. Loss: 0.0009
+===> Epoch[195](30/150): Avg. Loss: 0.0003
+===> Epoch[195](60/150): Avg. Loss: 0.0004
+===> Epoch[195](90/150): Avg. Loss: 0.0004
+===> Epoch[195](120/150): Avg. Loss: 0.0004
+===> Epoch[195](150/150): Avg. Loss: 0.0003
+===> Avg. PSNR: 34.6063 dB
+===> Avg. Loss: 0.0008
+===> Epoch[196](30/150): Avg. Loss: 0.0003
+===> Epoch[196](60/150): Avg. Loss: 0.0003
+===> Epoch[196](90/150): Avg. Loss: 0.0003
+===> Epoch[196](120/150): Avg. Loss: 0.0004
+===> Epoch[196](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 33.9172 dB
+===> Avg. Loss: 0.0009
+===> Epoch[197](30/150): Avg. Loss: 0.0004
+===> Epoch[197](60/150): Avg. Loss: 0.0003
+===> Epoch[197](90/150): Avg. Loss: 0.0004
+===> Epoch[197](120/150): Avg. Loss: 0.0004
+===> Epoch[197](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.0600 dB
+===> Avg. Loss: 0.0009
+===> Epoch[198](30/150): Avg. Loss: 0.0003
+===> Epoch[198](60/150): Avg. Loss: 0.0004
+===> Epoch[198](90/150): Avg. Loss: 0.0004
+===> Epoch[198](120/150): Avg. Loss: 0.0003
+===> Epoch[198](150/150): Avg. Loss: 0.0004
+===> Avg. PSNR: 34.1734 dB
+===> Avg. Loss: 0.0009
+===> Epoch[199](30/150): Avg. Loss: 0.0004
+===> Epoch[199](60/150): Avg. Loss: 0.0003
+===> Epoch[199](90/150): Avg. Loss: 0.0003
+===> Epoch[199](120/150): Avg. Loss: 0.0004
+===> Epoch[199](150/150): Avg. Loss: 0.0003
+===> Avg. PSNR: 33.6978 dB
+===> Avg. Loss: 0.0015
+===> Epoch[200](30/150): Avg. Loss: 0.0005
+===> Epoch[200](60/150): Avg. Loss: 0.0005
+===> Epoch[200](90/150): Avg. Loss: 0.0004
+===> Epoch[200](120/150): Avg. Loss: 0.0004
+===> Epoch[200](150/150): Avg. Loss: 0.0003
+===> Avg. PSNR: 34.9569 dB
+===> Avg. Loss: 0.0007

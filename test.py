@@ -36,27 +36,67 @@ with open('test_result.log', 'w') as f:
     f.write('testing log record:')
     f.write('dataset size = {}\n'.format(args.nTest))
     f.write('------------------------------\n')
+    output_path = 'video0/test'
+    avg_psnr = 0
+    avg_ssim = 0
+    avg_mse = 0
+    avg_fmse = 0
     for i, (imgIn, imgTar) in enumerate(test_data_loader):
         print('Image{}:'.format(i))
         f.write('Image{}:\n'.format(i))
+        
         varIn = Variable(imgIn)
+        
+        mask = imgIn[:,3].numpy().squeeze().transpose((0, 1))
         img_real = imgTar.numpy().squeeze().transpose((1, 2, 0)).astype('uint8')
         img_size = img_real.shape
+        
         if args.cuda:
             varIn = varIn.cuda()
  
         pred = net(varIn)
         pred = pred.data.cpu().numpy().squeeze().transpose((1, 2, 0))
         img_pred = np.round(255*np.clip(pred[:img_size[0], :img_size[1], :], 0, 1)).astype('uint8')
-        imageio.imwrite('video0/test/result/result_{:0>4}.png'.format(i), img_pred)
-        imageio.imwrite('video0/test/real_image/real_image_{:0>4}.png'.format(i), img_real)
+        mask = np.round(255*np.clip(mask[:img_size[0], :img_size[1]], 0, 1)).astype('uint8')
+        
+        #===== Save predict images =====#
+        imageio.imwrite('{}/result/result_{:0>4}.png'.format(output_path, i), img_pred)
 
+        #===== Evaluation: 4 metrics =====#
         psnr = psnr_metric(img_real, img_pred, data_range=255)
         print('===> PSNR: {:.4f} dB'.format(psnr))
         f.write('===> PSNR: {:.4f} dB\n'.format(psnr))
+        
         ssim = ssim_metric(img_real, img_pred, multichannel=True)
         print('===> SSIM: {:.4f} dB'.format(ssim))
         f.write('===> SSIM: {:.4f} dB\n'.format(ssim))
+
+        mse = np.sum(((img_real-img_pred)**2)/np.prod(img_size))
+        print('===> MSE: {:.4f}'.format(mse))
+        f.write('===> MSE: {:.4f}\n'.format(mse))
+        
+        mask_size = 3*np.sum(mask>=128)
+        fmse = np.sum(((img_real-img_pred)**2)/np.sum(mask_size))
+        print('===> fMSE: {:.4f}'.format(fmse))
+        f.write('===> fMSE: {:.4f}\n'.format(fmse))
+        
         print('------------------------------')
         f.write('------------------------------\n')
         
+        avg_psnr += psnr
+        avg_ssim += ssim
+        avg_mse += mse
+        avg_fmse += fmse
+        
+    avg_psnr /= len(test_data_loader)
+    avg_ssim /= len(test_data_loader)
+    avg_mse /= len(test_data_loader)
+    avg_fmse /= len(test_data_loader)
+    print('===> Avg. PSNR: {:.4f} dB'.format(avg_psnr))
+    f.write('===> Avg. PSNR: {:.4f} dB\n'.format(avg_psnr))
+    print('===> Avg. SSIM: {:.4f}'.format(avg_ssim))
+    f.write('===> Avg. SSIM: {:.4f}\n'.format(avg_ssim))
+    print('===> Avg. MSE: {:.4f}'.format(avg_mse))
+    f.write('===> Avg. MSE: {:.4f}\n'.format(avg_mse))
+    print('===> Avg. fMSE: {:.4f}'.format(avg_fmse))
+    f.write('===> Avg. fMSE: {:.4f}\n'.format(avg_fmse))
