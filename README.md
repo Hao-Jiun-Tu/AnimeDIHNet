@@ -1,4 +1,7 @@
 # AnimeDIHNet
+- Computational Photography Final Project : Animation Image Harmonization 
+- Team Member: Jason Tu and Sharon Tsai
+- Date: 2022/05/17-2022/6/17
 
 ## Requirements
 - pytorch
