@@ -101,6 +101,7 @@ def train(f, epoch):
             print("===> Epoch[{}]({}/{}): Avg. Loss: {:.4f}".format(epoch, iteration+1, len(train_data_loader), epoch_loss/args.printEvery))
             f.write("===> Epoch[{}]({}/{}): Avg. Loss: {:.4f}\n".format(epoch, iteration+1, len(train_data_loader), epoch_loss/args.printEvery))
             epoch_loss = 0
+    # print(optimizer.param_groups[0]['params'][10].grad)
 
 def validate(f):
     avg_psnr = 0
