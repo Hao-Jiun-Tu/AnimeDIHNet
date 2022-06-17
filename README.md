@@ -21,7 +21,7 @@ python train.py --nEpochs 240      \
 ### Test
 ```
 python test.py --model_path model_trained/<model_trained filename>.pth  \
-                --nTest 20                                               \
+                --nTest 20                                              \
                 --cuda
 ```
 Here we provide three model files that we had trained: `unet_mse.pth`, `unet_mse.pth` and `unet_attention.pth`.
