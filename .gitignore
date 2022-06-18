@@ -6,4 +6,4 @@ video0/transfer
 video0/test/real_image/*
 video0/test/result/*
 model_trained/*.pth
-tradition/*
+# tradition/*
