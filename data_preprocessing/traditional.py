@@ -271,7 +271,7 @@ class Regrain:
                            rho * img_arr_out)
         return img_arr_out
 
-result_path = '../tradtion'
+result_path = '../tradition'
 if not os.path.exists(result_path):
     os.makedirs(result_path)
 
