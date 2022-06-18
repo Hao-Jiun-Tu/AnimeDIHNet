@@ -12,7 +12,7 @@
 - scikit-image
 
 ## Introcdution
-Image harmonization is an important step in photo editing. Given that the foreground and background image, if we directly composite them without any action, it may look weird. The task of image harmonization is to make those images visually consistent. In the project, we will aim at animation images to perform image harmonization.
+Image harmonization is an important step in photo editing. Given the foreground and background images, if we directly composite them without any action, it may look so weird. The task of image harmonization is to make those images visually consistent. In the project, we will aim at animation images to perform image harmonization.
 
 ## Dataset
 Since our topic is the specific application of image harmonization for animation images, and there is no related dataset supporting our demands, we need to construct animation image dataset by ourselves. You can also directly use [our dataset][1]. The following shows our dataset construction flow:
