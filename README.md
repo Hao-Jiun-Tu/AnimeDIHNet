@@ -12,11 +12,11 @@
 - scikit-image
 
 ## Dataset
-Since our topic is the specific application of image harmonization for animation images, and there is no related dataset supporting our demands, we need to construct animation image dataset by ourselves. You can also directly use [our dataset][1]. The following shows the our dataset construction flow:
+Since our topic is the specific application of image harmonization for animation images, and there is no related dataset supporting our demands, we need to construct animation image dataset by ourselves. You can also directly use [our dataset][1]. The following shows our dataset construction flow:
 ![image0](experiment/image_for_readme/dataset_construction.png)
 - Steps
     - Pick the target video to get animation images (`data_preprocessing/video_sub.py`).
-    - Remove the background of ground truth images to get foreground masks, perform color transfer, and composite images (`data_preprocessing/data_preprocessing.py`).
+    - [Remove the background][2] of ground truth images to get foreground masks, perform color transfer, and composite images (`data_preprocessing/data_preprocessing.py`).
     - (Optional) Blur foreground masks with Gaussian filter (`data_preprocessing/mask_blurring.py`)
 
 ## Usage
@@ -32,7 +32,7 @@ python test.py --model_path model_trained/<model_trained filename>.pth  \
                 --nTest 20                                              \
                 --cuda
 ```
-Here we provide [three model files][2] that we had trained: `unet_mse.pth`, `unet_mse.pth` and `unet_attention.pth`.
+Here we provide [three model files][3] that we had trained: `unet_mse.pth`, `unet_mse.pth` and `unet_attention.pth`.
 
 ### Experiments
 ## Foreground mask without/with blur
@@ -52,5 +52,6 @@ Here we provide [three model files][2] that we had trained: `unet_mse.pth`, `une
 - You can directly execute `run_train.bat` or `run_test.bat` to train or test the model. Some model arguments are written in the front part of `train.py` and `test.py`.
 - There are more details in `document/`, and some reference papers are in `reference/`.
 
-[1]:kkk
-[2]:d
+[1]:https://drive.google.com/drive/folders/1BI6-gSlj4X5AVMFletzb1rXpVs_Vo4FT?usp=sharing
+[2]:https://github.com/danielgatis/rembg.git
+[3]:https://drive.google.com/drive/folders/1LmHU3OSkZrUqMnnonmwF_Y8wC7jW_QMx?usp=sharing
