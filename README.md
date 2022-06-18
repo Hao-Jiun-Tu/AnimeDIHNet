@@ -34,19 +34,21 @@ python test.py --model_path model_trained/<model_trained filename>.pth  \
 ```
 Here we provide [three model files][3] that we had trained: `unet_mse.pth`, `unet_mse.pth` and `unet_attention.pth`.
 
-### Experiments
-## Foreground mask without/with blur
+## Experiments
+### Foreground mask without/with blur
 ![image1](experiment/image_for_readme/experiment1.png)
 
-## Patchsize and foreground object size
+### Patchsize and foreground object size
 ![image1](experiment/image_for_readme/experiment2.png)
 
-## Comparison with recent work
-![image1](experiment/image_for_readme/experiment3.png)
+### Comparison with recent work
 |          | fMSE      |    MSE    | PSNR      |    SSIM    |
 | -------- | --------- |:---------:| --------- |:----------:|
 | **Ours** | **62.17** | **11.83** | **35.83** | **0.9763** |
 | iSSAM    | 98.59     |   13.47   | 34.60     |   0.9547   |
+
+![image1](experiment/image_for_readme/experiment3.png)
+
 
 ### Backup
 - You can directly execute `run_train.bat` or `run_test.bat` to train or test the model. Some model arguments are written in the front part of `train.py` and `test.py`.
