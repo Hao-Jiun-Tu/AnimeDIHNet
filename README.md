@@ -13,11 +13,15 @@
 
 ## Dataset
 Since our topic is the specific application of image harmonization for animation images, and there is no related dataset supporting our demands, we need to construct animation image dataset by ourselves. You can also directly use [our dataset][1]. The following shows our dataset construction flow:
-![image0](experiment/image_for_readme/dataset_construction.png)
+![image](experiment/image_for_readme/dataset_construction.png)
 - Steps
     - Pick the target video to get animation images (`data_preprocessing/video_sub.py`).
     - [Remove the background][2] of ground truth images to get foreground masks, perform color transfer, and composite images (`data_preprocessing/data_preprocessing.py`).
     - (Optional) Blur foreground masks with Gaussian filter (`data_preprocessing/mask_blurring.py`)
+
+## Model
+The architecture of our AnimeDIHNet (Animation Deep Image Harmonization Network)
+![image](experiment/image_for_readme/model_architecture.png)
 
 ## Usage
 ### Train
@@ -36,9 +40,9 @@ Here we provide [three model files][3] that we had trained: `unet_mse.pth`, `une
 
 ## Experiments
 ### Foreground mask without/with blur
-![image1](experiment/image_for_readme/experiment1.png)
+![image0](experiment/image_for_readme/experiment1.png)
 
-### Patchsize and foreground object size
+### Different patch and foreground object size
 ![image1](experiment/image_for_readme/experiment2.png)
 
 ### Comparison with recent work
